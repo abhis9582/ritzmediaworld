@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/bootnavbar.css">
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/owl.carousel.min.css">
-<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/owl.theme.default.min.css">
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/style.css">
 <!--link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/new_style.css"-->
@@ -18,7 +17,7 @@
         gtag('config', 'G-0YHLN54GF7');
     </script>
     <meta name="google-site-verification" content="UJDMaKvPAV5eAGJrDzTOTmxfhqT2OrUPSxwlVnAcgHs" />
-    <script>
+    <!-- <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
@@ -32,7 +31,7 @@
             'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1491326822260603');
         fbq('track', 'PageView');
-    </script>
+    </script> -->
     <noscript><img class="image_home" height="1" width="1"
             src="https://www.facebook.com/tr?id=1491326822260603&ev=PageView&noscript=1" />
     </noscript>

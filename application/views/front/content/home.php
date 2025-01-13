@@ -41,7 +41,7 @@
         gtag('config', 'G-0YHLN54GF7');
     </script>
     <meta name="google-site-verification" content="UJDMaKvPAV5eAGJrDzTOTmxfhqT2OrUPSxwlVnAcgHs" />
-    <script>
+    <!-- <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
@@ -55,7 +55,7 @@
             'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1491326822260603');
         fbq('track', 'PageView');
-    </script>
+    </script> -->
     <noscript><img class="image_home" height="1" width="1"
             src="https://www.facebook.com/tr?id=1491326822260603&ev=PageView&noscript=1" />
     </noscript>
@@ -141,7 +141,8 @@
         </div>
         <div class="row second_div from0to100">
             <div class="thats-how-image">
-                <img loading="lazy" decoding="async" src="<?php echo BASE_URL ?>webroot/images/dm-H-Process.png">
+                <img loading="lazy" decoding="async" src="<?php echo BASE_URL ?>webroot/images/dm-H-Process.png"
+                alt="image"/>
             </div>
         </div>
         <div

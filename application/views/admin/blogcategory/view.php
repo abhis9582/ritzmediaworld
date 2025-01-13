@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="<?php echo BASE_URL;?>webroot/front/css/bootnavbar.css">
 <link rel="stylesheet" href="<?php echo BASE_URL;?>webroot/front/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo BASE_URL;?>webroot/front/css/owl.carousel.min.css">
-<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+<!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"> -->
 <link rel="stylesheet" href="<?php echo BASE_URL;?>webroot/front/css/owl.theme.default.min.css">
 <link rel="stylesheet" href="<?php echo BASE_URL;?>webroot/front/css/style.css">
 <!--link rel="stylesheet" href="<?php echo BASE_URL;?>webroot/front/css/new_style.css"-->

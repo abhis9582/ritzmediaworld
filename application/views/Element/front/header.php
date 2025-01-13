@@ -11,27 +11,32 @@
             <!-- Social Icons in the Center -->
             <ul class="top_header_ul d-flex justify-content-center align-items-center m-0 p-0">
                 <?php if (!empty($Systemdata[0]['facebook_url'])) { ?>
-                    <li><a href="<?= $Systemdata[0]['facebook_url'] ?>" target='_blank'><i
+                    <li><a href="<?= $Systemdata[0]['facebook_url'] ?>" target='_blank'
+                    aria-label="facebook"><i
                                 class="fa-brands fa-facebook"></i></a>
                     </li>
                 <?php }
                 if (!empty($Systemdata[0]['youtube_url'])) { ?>
-                    <li><a href="<?= $Systemdata[0]['youtube_url'] ?>" target='_blank'><i
+                    <li><a href="<?= $Systemdata[0]['youtube_url'] ?>" target='_blank'
+                    aria-label="youtube"><i
                                 class="fa-brands fa-youtube"></i></a>
                     </li>
                 <?php }
                 if (!empty($Systemdata[0]['twitter_url'])) { ?>
-                    <li><a href="<?= $Systemdata[0]['twitter_url'] ?>" target='_blank'><i
+                    <li><a href="<?= $Systemdata[0]['twitter_url'] ?>" target='_blank'
+                    aria-label="twitter"><i
                                 class="fa-brands fa-twitter"></i></a>
                     </li>
                 <?php }
                 if (!empty($Systemdata[0]['linkedin_url'])) { ?>
-                    <li><a href="<?= $Systemdata[0]['linkedin_url'] ?>" target='_blank'><i
+                    <li><a href="<?= $Systemdata[0]['linkedin_url'] ?>" target='_blank'
+                    aria-label="linkedin"><i
                                 class="fa-brands fa-linkedin"></i></a>
                     </li>
                 <?php }
                 if (!empty($Systemdata[0]['vimeo_url'])) { ?>
-                    <li><a href="<?= $Systemdata[0]['vimeo_url'] ?>" target='_blank'><i
+                    <li><a href="<?= $Systemdata[0]['vimeo_url'] ?>" target='_blank'
+                    aria-label="instagram"><i
                                 class="fa-brands fa-instagram"></i></a>
                     </li>
                 <?php } ?>
@@ -56,15 +61,18 @@
         <h2>Get In Touch</h2>
         <form id="popup-form" action="<?= BASE_URL . 'popupsubmit' ?>" method="post" onsubmit="submitForm(event)">
             <div class="form-group">
-                <input type="text" id="name" name="name" required placeholder="Your Name">
+                <input type="text" id="name" name="name" required placeholder="Your Name"
+                autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="tel" id="mobile" name="mobile" required placeholder="Your Mobile">
+                <input type="tel" id="mobile" name="mobile" required placeholder="Your Mobile"
+                autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="email" id="email" name="email" required placeholder="Your Email">
+                <input type="email" id="email" name="email" required placeholder="Your Email"
+                autocomplete="off">
             </div>
-            <select class="pop-form-select" name="services" id="services" required>
+            <select class="pop-form-select" name="services" id="services" required aria-label="Select a Service">
                 <option selected>Select Service</option>
                 <option value="print_advertising">Print Advertising</option>
                 <option value="creative_services">Creative Services</option>
@@ -75,7 +83,8 @@
                 <option value="web_designing_development">Web Designing & Development</option>
             </select>
             <div class="form-group">
-                <textarea id="message" name="message" required placeholder="Any specific requirement"></textarea>
+                <textarea id="message" name="message" required placeholder="Any specific requirement"
+                autocomplete="off"></textarea>
             </div>
             <button type="submit" class="submit-btn">SUBMIT</button>
         </form>

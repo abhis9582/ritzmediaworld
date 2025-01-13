@@ -307,24 +307,6 @@
 			// $('#main_navbar').bootnavbar();
 		})
 	</script>
-	<script>
-		var button = document.getElementById("getfreeproposal");
-		var closeBtn = document.getElementById("closeFormBtn");
-		button.addEventListener("click", function () {
-			contactForm.classList.toggle("active");
-		});
-		closeBtn.addEventListener("click", function () {
-			contactForm.classList.remove("active");
-		});
-
-		// Close the popup form when clicking outside the form container
-		window.addEventListener("click", function (event) {
-			if (event.target === contactForm) {
-				contactForm.classList.remove("active");
-			}
-		});
-	</script>
-
 	<!--<script src="<?= FRONT_DIR ?>js/bootstrap.min.js"></script>-->
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
