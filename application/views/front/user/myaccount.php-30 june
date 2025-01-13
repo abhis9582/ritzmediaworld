@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="author" content="Bhalaai">
+<title><?=$Content[0]['meta_title']?></title>
+<meta name="description" content="<?=$Content[0]['meta_description']?>">
+<meta name="keyword" content="<?=$Content[0]['meta_keywords']?>">
+<?php $this->load->view("Element/front/header_common.php");?>
+  
+</head>
+
+<body>
+<?php $this->load->view("Element/front/header.php");?>
+
+<!--second-head-->
+<div class="second-head2">
+<div class="container">
+<div class="left-align col-md-6">
+<p>My Account</p>
+</div>
+
+<div class="right-align col-md-6 hidden-xs">
+<p class="pull-right">HOME / My Account</p>
+</div>
+
+</div>
+</div><!--second-head-->
+
+
+
+
+<div class="container">
+<div class="padding20px_leftright">
+        
+<div class="col-md-3 height5001">
+  <br>
+  <br>
+  <?php $this->load->view("Element/front/myaccount-left.php");?>
+  
+</div> 
+ 
+<div class="col-md-9">
+  
+  
+  <div class="col-md-11 col-sm-12 col-xs-12">
+  
+  
+  <!------------profile--------->
+				<div class="col-md-12 col-sm-12 col-xs-12 padding10px ">
+				<h3 class="black_color_bl ">WELCOME TO</h3>
+				<hr></hr>
+				</div>
+									
+			    
+                                    
+                            
+  
+  <!-------------profile close------>
+  
+  </div>
+  
+<div class="col-md-12">&nbsp; <!------------empty space--> <div style="height:100px;"></div> </div> 
+</div>  
+  
+  
+  
+  
+  
+</div>
+</div>
+
+
+<?php $this->load->view("Element/front/footer.php");?>
+<?php $this->load->view("Element/front/footer_common.php");?>

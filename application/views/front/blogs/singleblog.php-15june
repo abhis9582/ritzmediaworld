@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   
+<title> <?=strip_tags($BlogData[0]['title'])?></title>
+ <meta name="description" content="<?=substr(strip_tags($BlogData[0]['description']),0,100)?>"/>
+ <meta name="keyword" content="<?=substr(strip_tags($BlogData[0]['description']),0,120)?>"/>
+ 
+
+   <meta property="og:title" content=" <?=strip_tags($BlogData[0]['title'])?>" /> 
+<meta property="og:description" content="<?=substr(strip_tags($BlogData[0]['description']),0,100)?>" />
+<meta property="og:image" content="<?php echo $this->image->getImageSrc("blogs",$BlogData[0]['blog_image1'],""); ?>" />
+ <meta name="author" content="Bhalaai NGO">
+<?php $this->load->view("Element/front/header_common.php");?>
+  
+</head>
+
+<body>
+<?php $this->load->view("Element/front/header.php");?>
+
+
+<div class="clearfix"></div>
+
+<?php $src = $this->image->getImageSrc("pages",$Content[0]['banner_image'],""); ?>
+<div class="banner-area pdt100 pdb100" style="background: url(<?=$src?>);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                     <div class="sliderText" style="margin-top:60px;">
+		<? if($Content[0]['heading_title']!=""){ ?>
+                <h1><? $head = strip_tags($Content[0]['heading_title']);
+				echo (strlen($head) > 20)?substr($head,0,20):$head;
+				?></h1>
+		<? } ?>
+            
+               <? if($Content[0]['heading_description']!=""){ ?>
+			   <h3><? $headdes =strip_tags($Content[0]['heading_description']); 
+			   
+			   echo (strlen($headdes) > 100)?substr($headdes,0,100).'...':$headdes;
+			   ?></h3>
+			   <? } ?>
+			    <? if($Content[0]['read_more_link']!=""){ ?>
+                 <a href="<?=$Content[0]['read_more_link']?>" class="btn btn-default btn-lg redBttn"><?=strip_tags($Content[0]['read_more_text'])?></a>
+				<? } ?>
+              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="clearfix"></div>
+<div style=" background-color: rgba(204, 204, 204, 0.49) ;box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75) !important; padding:10px 0px;">
+      <div class="container">  
+        <div class="row">
+            <div class="col-lg-12">
+                <ol class="breadcrumb magin-top" >
+                    <li><a href="<?=BASE_URL?>">Home</a>
+                    </li>
+                    <li><a href="<?=BASE_URL?>blogs">Blog</a></li>
+                    <li class="active"><?=Ucwords($BlogData[0]['title'])?></li>
+                   
+                </ol>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<section>
+   <article>
+
+        <div class="container">
+
+            <div class="col-md-9 contents">
+
+                <div class="projects events-list">
+                   
+					<?php  //print_r($Blogs);
+					
+				
+					$url_title = str_replace(" ","",$BlogData[0]['title']);
+					$url_title = strtolower($url_title);
+					$day = date("d",strtotime($BlogData[0]['add_date']));
+					$month = date("M",strtotime($BlogData[0]['add_date']));
+					?>
+                        <div class="media animated out" data-animation="fadeInLeft" data-delay="0">
+                            <figure class="image-appear pull-left">
+                                <?php $src = 'webroot/images/blog_not_found.jpg';
+								    $imagename=$BlogData[0]['blog_image1'];
+	      $imgpath=$this->image->GetImageDirectory('blogs',$imagename);
+		 if($imagename!="" && file_exists($imgpath."/".$imagename)==true){
+			$src=($imagename)?$imgpath.'/'.$imagename:"webroot/images/rap_temp.jpg";   
+		 }
+		 ?>
+                               <img src="<?=BASE_URL.$src?>" class="media-object" alt="image">
+                            </figure>
+
+                            <div class="media-body">
+                                <header class="post-heading">
+                                    <div class="date-tag"><span><?=$day?></span><?=$month?></div>
+                                    <h4 class="media-heading headingfont"><?=$BlogData[0]['title']?></h4>
+                               </header> <br><br>
+							   	<div class="addthis_inline_share_toolbox"></div>
+                                <div class="clearfix"></div>
+                                <p>
+                                <?=stripslashes($BlogData[0]['description'])?>
+                                </p>
+                            </div>
+                        </div>
+				
+
+                </div>
+
+
+            </div>
+
+			
+			
+			<div class="col-md-3">
+				
+					
+					<form action="<?=BASE_URL?>blogs/search" method="post">
+					 <input type="text" name="search_key" placeholder="Search" class="col-md-12 padding_reduce" value="<?=@$searckkey?>">
+					
+					<script>
+					function changeUrl(searchval){
+						window.location.href='<?=BASE_URL?>blogs/archive/'+searchval;
+					}
+					</script>
+					 
+					 
+					 
+					 <button  class="btn btn-danger btn-md pull-right col-md-12" name="submit">Search</button>
+					 </form>
+				
+			</div>
+		
+			
+            <div class="col-md-3 sidebar">
+            
+                <div class="widget widget_categories animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+
+                    <header class="heading headingfont">
+
+                        <h4 class="headingfont">Archives</h4>
+
+                    </header>
+
+                    <ul>
+<? 
+	foreach($this->blog_model->getALLMonthBlogs() as $Allmonth) {
+
+
+?>
+                        <li class="new_list4"><a href="<?=BASE_URL?>blogs/archive/<?=$Allmonth['year']?>/<?=$Allmonth['month']?>"><?=$this->commonmod_model->getMonthName($Allmonth['month']);?> <?=$Allmonth['year']?></a></li>
+<? } ?>
+                        
+                   
+
+                    </ul>
+
+                </div>
+				
+				<div class="widget widget_categories animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+
+                    <header class="heading headingfont">
+
+                        <h4 class="headingfont">Categories</h4>
+
+                    </header>
+
+                    <ul>
+<?
+
+foreach($All_BLOG_Category as $BlogCatData){ 
+
+$cat_url_title = str_replace(" ","",$BlogCatData['category_name']);
+					$cat_url_title = strtolower($cat_url_title);
+?>
+                        <li><a href="<?=BASE_URL?>blog/category/<?=$cat_url_title?>/<?=$BlogCatData['id']?>"><?=$BlogCatData['category_name']?></a>(<?=$this->commonmod_model->GetCountBlogBycategory($BlogCatData['id']);?>)</li>
+<? } ?>
+                        
+                   
+
+                    </ul>
+
+                </div>
+<!--featured articles-->
+
+                  
+<? if(count($Featured_Category) > 0){ 
+
+foreach($Featured_Category as $FeaturedcatData){ 
+$BlogData = $this->commonmod_model->GetSingleBlogdata($FeaturedcatData['featured_category_id']);
+
+	$url_title = str_replace(" ","",$BlogData[0]['title']);
+					$url_title = strtolower($url_title);
+					
+?>
+<div class="widget widget_featured_posts animated fadeInUp in" data-animation="fadeInUp" data-delay="0">
+                    <header class="heading">
+                        <h4 class="headingfont"><?=$FeaturedcatData['category_name']?></h4>
+                    </header>
+                    
+                    <ul>
+                        <li>
+                            <div class="featured-box">
+                                <figure class="image"><img src="<?=FRONT_DIR?>img/blog/blog7.jpg" width="265"></figure>
+                                <h6 class="headingfont"><?=$BlogData[0]['title']?></h6>
+                                <p>
+                                     <?=substr($BlogData[0]['description'],0,100)?>                                 </p>
+                                <a href="<?=BASE_URL?>blog/<?=$url_title?>/<?=$BlogData[0]['id']?>" class="btn btn-default btn-sm">Read More</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div> 
+<? } } ?>                          
+                
+
+            </div>
+ 
+        </div>
+    </article>
+<div class="container">
+<div class="col-sm-12 text-center" style="display:none;">   
+                 <ul class="pagination animated out" data-animation="fadeInUp" data-delay="0">
+
+                    <li><a href="#"><</a></li>
+
+                    <li><a href="#">02</a></li>
+
+                    <li><a href="#">03</a></li>
+
+                    <li><a href="#">04</a></li>
+
+                    <li><a href="#">05</a></li>
+
+                    <li><a href="#">06</a></li>
+                    
+                    <li><a href="#">></a></li>
+                </ul>
+                </div>
+</section>
+
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-592bf100525fc5cf"></script> 
+<?php $this->load->view("Element/front/footer.php");?>
+<?php $this->load->view("Element/front/footer_common.php");?>
