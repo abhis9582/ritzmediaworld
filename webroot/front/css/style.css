@@ -144,7 +144,7 @@ a:hover {
   float: right;
   font-weight: 500;
 }
-.web-story-button{
+.web-story-button {
   display: none !important;
 }
 .new_menu {
@@ -6145,6 +6145,7 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
+  user-select: none;
   -webkit-tap-highlight-color: transparent;
   vertical-align: middle;
   z-index: 1
@@ -7505,10 +7506,12 @@ p {
   object-fit: cover
 }
 
-.services-heading{
-  height: 65px;;
+.services-heading {
+  height: 65px;
+  ;
 }
-.recent-post-img{
+
+.recent-post-img {
   width: 100%;
 }
 
@@ -8735,7 +8738,7 @@ p {
     padding: 5px 19px;
   }
 
-  .web-story-button{
+  .web-story-button {
     display: block !important;
     font-size: 16px;
   }
@@ -8747,12 +8750,15 @@ p {
     display: flex;
     justify-content: center;
   }
-  .left-col{
+
+  .left-col {
     margin-top: 20px;
   }
-  .right-col{
+
+  .right-col {
     margin-top: 20px;
   }
+
   .phone-number,
   .request-callback,
   .image_google_partner {
@@ -9413,7 +9419,8 @@ p {
     text-decoration: none;
     color: #333;
   }
-  .services-heading{
+
+  .services-heading {
     height: auto;
   }
 }
@@ -9438,10 +9445,6 @@ p {
 
 .image_home {
   display: none
-}
-
-.image_home1 {
-  height: 100% !important;
 }
 
 .img-circle {
@@ -9481,9 +9484,11 @@ p {
   margin: 4px;
   border-radius: 5px 20px;
 }
-.meta_keywords a{
+
+.meta_keywords a {
   color: #fff;
 }
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   min-height: 480px;
@@ -9850,9 +9855,9 @@ a img {
   margin: 0px auto;
 }
 
-.how-we-work-div strong {
+/* .how-we-work-div strong {
   color: #915a00;
-}
+} */
 
 .new-section-word {
   background: linear-gradient(90deg, #001240, #001280, #915a00);
@@ -10233,7 +10238,7 @@ a img {
     left: 120px;
     color: #ffffff;
     font-style: italic;
-}
+  }
 
   .new-section-word-inner {
     height: 250px;
@@ -10247,7 +10252,7 @@ a img {
 
 /* style for about us page starts*/
 
-.about-page-heading{
+.about-page-heading {
   font-size: 50px;
   text-transform: uppercase;
   font-family: 'Lexend';
@@ -10255,11 +10260,12 @@ a img {
   font-weight: bolder;
 }
 
-.about-page-heading-desc{
+.about-page-heading-desc {
   width: 50%;
   padding: 10px;
 }
-.about-page-banner{
+
+.about-page-banner {
   background-color: #001240;
   position: relative;
   height: 300px;
@@ -10267,7 +10273,8 @@ a img {
   align-items: center;
   display: flex;
 }
-.like-icon{
+
+.like-icon {
   background-color: #6f490d;
   width: 100px;
   height: 100px;
@@ -10277,10 +10284,12 @@ a img {
   display: flex;
   align-items: center;
 }
-.like-icon i{
+
+.like-icon i {
   font-size: 50px;
 }
-.about-page-banner-container{
+
+.about-page-banner-container {
   align-items: center;
   display: flex;
   width: 250px;
@@ -10288,7 +10297,8 @@ a img {
   bottom: -110px;
   left: 100px;
 }
-.about-page-banner-container2{
+
+.about-page-banner-container2 {
   align-items: center;
   display: flex;
   width: 250px;
@@ -10296,13 +10306,16 @@ a img {
   bottom: -110px;
   right: 100px;
 }
-.about-page-banner-container img{
-  width: 100%; 
+
+.about-page-banner-container img {
+  width: 100%;
 }
-.about-page-banner-container2 img{
-  width: 100%; 
+
+.about-page-banner-container2 img {
+  width: 100%;
 }
-.about-page-image-text1{
+
+.about-page-image-text1 {
   position: absolute;
   right: 0px;
   font-size: 35px;
@@ -10310,7 +10323,8 @@ a img {
   width: 60px;
   top: -42px;
 }
-.about-page-image-text2{
+
+.about-page-image-text2 {
   position: absolute;
   left: -100px;
   font-size: 35px;
@@ -10318,11 +10332,13 @@ a img {
   width: 60px;
   top: -42px;
 }
+
 /* .container-2{
   background-color: #001240;
 } */
-.first-container{
+.first-container {
   background-color: #001240;
   padding: 10rem 4rem;
 }
+
 /* style for about us page ends*/
