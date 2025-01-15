@@ -499,7 +499,7 @@ function header_menu()
 						</li>
 
 						<li class="nav-item <?= ($_SERVER['REQUEST_URI'] == '/#') ? 'active' : ''; ?>">
-							<a class="nav-link" href="<?php echo BASE_URL; ?>work.html">Work</a>
+							<a class="nav-link" href="<?php echo BASE_URL; ?>work.html">Our Work</a>
 						</li>
 						<!--<li class="nav-item <?= ($_SERVER['REQUEST_URI'] == '/#') ? 'active' : ''; ?>">-->
 						<!--	<a class="nav-link" href="<?php echo BASE_URL; ?>resource.html">Resource</a>-->
