@@ -285,7 +285,7 @@ function header_menu()
 						alt="Ritz Media World"></a>
 				<button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span style="background-color: white!important; " class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
 					<ul class="navbar-nav">
@@ -297,7 +297,7 @@ function header_menu()
 							<a class="nav-link dropdown-toggle industry-link" href="#" id="navbarDropdown3" title="Industry"
 								role="button" aria-label="Submit" data-toggle="dropdown" aria-haspopup="true"
 								aria-expanded="false">Services</a>
-							<ul class="dropdown-menu industry-dropdown" style="background-color: #001240 !important;"
+							<ul class="dropdown-menu industry-dropdown"
 								aria-labelledby="navbarDropdown3">
 								<li class="nav-item dropdown">
 									<a class="dropdown-item nav-link dropdown-toggle" href="#"
@@ -305,7 +305,7 @@ function header_menu()
 										title="Creative Services">
 										Creative Services
 									</a>
-									<ul class="dropdown-menu" style="background-color: #001240 !important;"
+									<ul class="dropdown-menu"
 										aria-labelledby="featuresDropdown">
 										<li><a class="dropdown-item"
 												href="<?= BASE_URL ?>branding-and-identity-development.html">Branding and
@@ -329,7 +329,7 @@ function header_menu()
 								<li class="nav-item dropdown">
 									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown6"
 										title="Print Advertising" role="button" aria-label="Submit">Print Advertising</a>
-									<ul class="dropdown-menu" style="background-color: #001240 !important;"
+									<ul class="dropdown-menu"
 										aria-labelledby="featuresDropdown">
 										<li><a class="dropdown-item"
 												href="<?= BASE_URL ?>advertisement-designing.html">Advertisement Design
@@ -356,7 +356,7 @@ function header_menu()
 									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown7"
 										title="Radio Advertising" role="button" aria-label="Submit">Radio
 										Advertising</a>
-									<ul class="dropdown-menu" style="background-color: #001240 !important;"
+									<ul class="dropdown-menu"
 										aria-labelledby="featuresDropdown">
 										<li><a class="dropdown-item"
 												href="<?= BASE_URL ?>advertisement-concept-development.html">Advertisement Concept Development
@@ -386,7 +386,7 @@ function header_menu()
 									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown8"
 										title="Celebrity Endorsements" role="button" aria-label="Submit">Celebrity
 										Endorsements</a>
-									<ul class="dropdown-menu" style="background-color: #001240 !important;"
+									<ul class="dropdown-menu"
 										aria-labelledby="featuresDropdown">
 										<li><a class="dropdown-item" href="<?= BASE_URL ?>celebrity-selection.html">Celebrity Selection
 											</a></li>
@@ -410,7 +410,7 @@ function header_menu()
 									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown9"
 										title="Digital	Marketing" role="button" aria-label="Submit">Digital
 										Marketing</a>
-									<ul class="dropdown-menu" style="background-color: #001240 !important;"
+									<ul class="dropdown-menu"
 										aria-labelledby="featuresDropdown">
 										<li><a class="dropdown-item" href="<?= BASE_URL ?>digital-marketing-services.html">Digital Marketing
 												Services
@@ -439,7 +439,7 @@ function header_menu()
 									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown19"
 										title="Content Marketing" role="button" aria-label="Submit">Content
 										Marketing</a>
-									<ul class="dropdown-menu" style="background-color: #001240 !important;"
+									<ul class="dropdown-menu"
 										aria-labelledby="featuresDropdown">
 										<li><a class="dropdown-item" href="<?= BASE_URL ?>content-marketing.html">Content Marketing
 											</a></li>
@@ -459,7 +459,7 @@ function header_menu()
 									<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown20"
 										title="Web Designing &	Development" role="button" aria-label="Submit">Web Designing &
 										Development</a>
-									<ul class="dropdown-menu" style="background-color: #001240 !important;"
+									<ul class="dropdown-menu"
 										aria-labelledby="featuresDropdown">
 										<li><a class="dropdown-item" href="<?= BASE_URL ?>web-designing-development.html">Web Designing &
 												Development
@@ -483,7 +483,7 @@ function header_menu()
 							<a class="nav-link dropdown-toggle" href="<?= BASE_URL ?>about.html" id="navbarDropdown"
 								title="About Us" role="button" aria-label="Submit" data-toggle="dropdown" area-haspopup="true"
 								aria-expanded="false">About Us</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown10" style="background-color: #001240 !important;">
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown10">
 								<li class="nav-item dropdown">
 									<a class="dropdown-item" href="<?= BASE_URL ?>about.html" id="navbarDropdown1">
 										Our Profile

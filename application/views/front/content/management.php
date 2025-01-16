@@ -79,7 +79,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center mt-5">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h3">The Founders: Visionaries Behind the Magic</p>
 				<p class="h5"><b>Ritesh Malik</b></p>
 				<p><i>"I work with flair; that’s the real story!"</i></p>
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h5"><b>Satwinder Kaur</b></p>
 				<p><i>"When people see it, all they say is – this is a benchmark of success!"</i></p>
 				<p>The queen of strategy and the epitome of perfection! Satwinder ensures every plan at Ritz exudes
@@ -99,7 +99,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h5"><b>Nishi Malik</b></p>
 				<p><i>"On the journey of life, she walks her unique path!"</i></p>
 				<p>The business visionary and happiness powerhouse of Ritz! Nishi’s positive energy transforms every
@@ -108,7 +108,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h3">The Key Players: Experts with a Midas Touch</p>
 				<p class="h3">Brand Solutions</p>
 				<p><i>"I craft brands and make them the talk of the town!"</i></p>
@@ -116,7 +116,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h5">Digital Marketing Head</p>
 				<p><i>"Making waves in the online world is guaranteed!"</i></p>
 				<p>A digital queen who knows every nook and cranny of the online space. SEO, PPC, and social campaigns
@@ -124,7 +124,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h5">Content Lead</p>
 				<p><i>"Words have magic, and I’m the writer behind it!"</i></p>
 				<p>The genius who creates scroll-stopping content, transforming ideas into quirky and impactful stories.
@@ -132,21 +132,21 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h5">Video Editing Lead</p>
 				<p><i>"There’s art in every frame and transition!"</i></p>
 				<p>A video wizard who turns mundane footage into viral-worthy masterpieces.</p>
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h5">Art Director</p>
 				<p><i>"Life is a canvas, and I make it pop!"</i></p>
 				<p>The Picasso of creativity, whose vibrant designs light up every Ritz campaign.</p>
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h5">Sound Engineer</p>
 				<p><i>"Every beat and every jingle must be pitch-perfect!"</i></p>
 				<p>Sneha breathes life into sound, crafting jingles and audio vibes that make Ritz campaigns
@@ -154,7 +154,7 @@
 			</div>
 		</div>
 		<div class="d-flex justify-content-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<p class="h1">More Stars Powering the Ritz Engine</p>
 				<ul class="mt-4">
 					<li>

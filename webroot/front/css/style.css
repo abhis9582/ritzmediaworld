@@ -43,15 +43,15 @@ a:hover {
   text-decoration: none
 }
 
-@font-face {
+/* @font-face {
   font-family: PierceRegular-6OWY;
   src: url(../fonts/PierceRegular-6OWY.ttf)
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: Elianto-Regular;
   src: url(../fonts/Elianto-Regular.ttf)
-}
+} */
 
 .container {
   width: 100%;
@@ -1447,15 +1447,15 @@ a:hover {
   white-space: nowrap
 }
 
-@font-face {
+/* @font-face {
   font-family: 'OldStandard-Regular.ttf';
   src: url(../fonts/OldStandard-Regular.ttf) url(../fonts/Calgary-Regular.ttf) format("truetype")
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: 'OldStandard-Bold.ttf';
   src: url(../fonts/OldStandard-Bold.ttf) url(../fonts/Calgary-Regular.ttf) format("truetype")
-}
+} */
 
 html {
   scroll-behavior: smooth
@@ -6880,7 +6880,7 @@ p {
 
 .dropdown-menu .dropdown .dropdown-menu {
   border: none;
-  background: none !important;
+  /* background: none !important; */
 }
 
 .dropdown-menu .dropdown .dropdown-menu .nav-item {
@@ -7621,6 +7621,7 @@ p {
   .navbar-toggler-icon {
     width: 40px;
     border-radius: 5px;
+    background-color: white !important;
   }
 
   .about-section .row1 h1:before,
@@ -9528,6 +9529,7 @@ p {
     top: 100%;
     left: 0;
     z-index: 1000;
+    background-color: #001240 !important;
   }
 
   /* Show the dropdown when hovering over the parent menu item */
