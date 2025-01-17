@@ -144,9 +144,11 @@ a:hover {
   float: right;
   font-weight: 500;
 }
+
 .web-story-button {
   display: none !important;
 }
+
 .new_menu {
   width: 100%;
   float: left;
@@ -9784,6 +9786,22 @@ textarea {
   left: 0;
   top: 0;
   padding: 9px;
+  height: 100%;
+}
+
+.shadow-sm {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.free-report-head{
+  font-size: 25px;
 }
 
 a img {

@@ -2,7 +2,7 @@
 
 <head>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/style.css">
+	<!-- <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/style.css"> -->
 	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 	<style>
 		body {
@@ -53,32 +53,32 @@
 					<ul class="d-flex justify-content-center">
 						<?php if (!empty($Systemdata[0]['facebook_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['facebook_url'] ?>"><i
-											class="fa-brands fa-facebook"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['facebook_url'] ?>"
+										aria-label="facebook"><i class="fa-brands fa-facebook"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['youtube_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['youtube_url'] ?>"><i
-											class="fa-brands fa-youtube"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['youtube_url'] ?>"
+										aria-label="youtube"><i class="fa-brands fa-youtube"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['twitter_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['twitter_url'] ?>"><i
-											class="fa-brands fa-twitter"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['twitter_url'] ?>"
+										aria-label="twitter"><i class="fa-brands fa-twitter"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['linkedin_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['linkedin_url'] ?>"><i
-											class="fa-brands fa-linkedin"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['linkedin_url'] ?>"
+										aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['vimeo_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['vimeo_url'] ?>"><i
-											class="fa-brands fa-instagram"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['vimeo_url'] ?>"
+										aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></div>
 							</li>
 						<?php } ?>
 					</ul>
@@ -110,7 +110,7 @@
 				<span>Address: 402 – 404 , 4th floor Corporate Park, <br>Tower A1 Sector 142 , Greater Noida</span><br>
 				<span><i class="fa fa-phone mr-2 mt-2"></i><a href="tel:09220516777" class="text-light">09220516777</a>,
 					<a class="text-light" href="tel:07290002168">07290002168</a></span><br>
-				<span>Email: info@ritzmediaworld.com</span>
+				<span class="d-flex">Email:&nbsp; <span id="email"></span></span>
 				<div class="row mt-3 d-flex justify-content-center">
 					<div class="div mx-2">
 						<img src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner" height="55px">
@@ -165,12 +165,24 @@
 
 		}
 	</script>
+	<script type="text/javascript">
+		// Email parts
+		var user = 'info';
+		var domain = 'ritzmediaworld';
+		var tld = 'com';
+
+		// Combine them into a full email address
+		var email = user + '@' + domain + '.' + tld;
+
+		// Inject the email into the webpage
+		document.getElementById('email').innerHTML = " "+email;
+	</script>
 	<!--<script src="<?= FRONT_DIR ?>js/jquery-3.3.1.slim.min.js"></script>-->
 
 	<script src="<?= FRONT_DIR ?>js/bootstrap.min.js"></script>
 	<!-- <script src="<?= FRONT_DIR ?>js/popper.min.js"></script> -->
 	<script src="<?= FRONT_DIR ?>js/owl.carousel.min.js"></script>
-	<script>
+	<!-- <script>
 		$(document).ready(function () {
 			$('#customers-testimonials').owlCarousel({
 				loop: true,
@@ -183,11 +195,11 @@
 				smartSpeed: 450,
 			});
 		});
-	</script>
-	<script src="<?= FRONT_DIR ?>js/customjquery.js"></script>
+	</script> -->
+	<!-- <script src="<?= FRONT_DIR ?>js/customjquery.js"></script> -->
 	<script src="<?= FRONT_DIR ?>js/bootnavbar.js"></script>
 
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
 
 	<script>
 		$(function () {

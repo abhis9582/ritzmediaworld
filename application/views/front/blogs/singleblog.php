@@ -145,7 +145,7 @@
 									<?php
 									for ($i = 2; $i < 12; $i++) {
 										$y_arr = json_decode($BlogData[0]['y' . $i . '_size']);
-										if ($BlogData[0]['title' . $i] || $BlogData[0]['blog_image' . $i] || $BlogData['description' . $i] || $BlogData[0]['youtube_video' . $i]) {
+										if ($BlogData[0]['title' . $i] || $BlogData[0]['blog_image' . $i] || $BlogData[0]['youtube_video' . $i]) {
 											?>
 											<!-- IMAGE --> <?php // echo $i; ?> <!--AND DESCRIPTION--> <?php // echo $i; ?>
 											<?php if ($BlogData[0]['blog_image' . $i]) { ?>

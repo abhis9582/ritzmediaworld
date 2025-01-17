@@ -282,7 +282,7 @@
 <script src="<?= FRONT_DIR ?>js/bootstrap.min.js"></script>
 <script src="<?= FRONT_DIR ?>js/popper.min.js"></script>
 <script src="<?= FRONT_DIR ?>js/owl.carousel.min.js"></script>
-<script>
+<!-- <script>
 	$(document).ready(function () {
 		$('#customers-testimonials').owlCarousel({
 			loop: true,
@@ -295,7 +295,7 @@
 			smartSpeed: 450,
 		});
 	});
-</script>
+</script> -->
 <script src="<?= FRONT_DIR ?>js/customjquery.js"></script>
 <script src="<?= FRONT_DIR ?>js/bootnavbar.js"></script>
 

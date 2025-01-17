@@ -1,64 +1,112 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>404 Page Not Found</title>
-<style type="text/css">
+	<meta charset="utf-8">
+	<title>404 Page Not Found</title>
+	<style>
+		::selection {
+			background-color: #E13300;
+			color: white;
+		}
 
-::selection { background-color: #E13300; color: white; }
-::-moz-selection { background-color: #E13300; color: white; }
+		::-moz-selection {
+			background-color: #E13300;
+			color: white;
+		}
 
-body {
-	background-color: #fff;
-	margin: 40px;
-	font: 13px/20px normal Helvetica, Arial, sans-serif;
-	color: #4F5155;
-}
+		body {
+			background-color: #001240;
+			font-family: cursive;
+		}
 
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
-}
+		/* Container styling */
+		#container {
+			width: 100%;
+			margin: 0 auto;
+			padding: 20px;
+		}
 
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
-}
+		/* Heading styling */
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+			color: #fff;
+			text-align: center;
+		}
 
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
-}
+		/* Row styling */
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
 
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	box-shadow: 0 0 8px #D0D0D0;
-}
+		/* Content and Image default styling */
+		.content,
+		.image {
+			width: 100%;
+			text-align: center;
+		}
 
-p {
-	margin: 12px 15px 12px 15px;
-}
-</style>
+		.content {
+			order: 1;
+		}
+
+		.image {
+			order: 2;
+			margin-top: 20px;
+		}
+
+		img {
+			width: 500px;
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+
+		/* Styling for error message */
+		.error-msg {
+			font-size: 2rem;
+			color: #fff;
+		}
+
+		.error-msg span {
+			line-height: 45px;
+		}
+
+		.error-msg a {
+			color: #007bff;
+			text-decoration: none;
+		}
+	</style>
 </head>
+
 <body>
 	<div id="container">
 		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+		<div class="row">
+			<div class="col-md-6">
+				<p class="error-msg">
+					<span>Oh</span><br>
+					<span>no...</span><br>
+					<span>Ritz Media World</span><br>
+					<span>cannot find that</span><br>
+					<span>page.</span><br>
+					<span>Go Back</span><br>
+					<span>to Website</span><br>
+					<a href="https://ritzmediaworld.com/">www.ritzmediaworld.com</a>
+				</p>
+			</div>
+			<div class="col-md-6">
+				<img src="https://static.wixstatic.com/media/338691_21e88bd2fb7645c7ac75e6f4ff5cab7b~mv2.png/v1/crop/x_36,y_0,w_1964,h_2000/fill/w_740,h_754,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/The%20Go-To%20Guy%20Question.png"
+					alt="image">
+			</div>
+		</div>
 	</div>
 </body>
+
 </html>

@@ -127,8 +127,8 @@
     <section class="service_boxxx">
         <div class="row mt-2 second_div fromLeftToRight">
             <div class="col-md-3 d-flex justify-content-end mobile-img">
-                <img class="mt-3" decoding="async" style="width: 95px; height:95px;"
-                    src="<?php echo BASE_URL ?>webroot/images/seo-How-We-Work-Icon.png" alt="how we work">
+                <img class="mt-3" decoding="async" src="<?php echo BASE_URL ?>webroot/images/seo-How-We-Work-Icon.png"
+                    alt="how we work" loading="lazy" />
             </div>
             <div class="col-md-7 thats-how">
                 <p>That’s How</p>
@@ -142,17 +142,17 @@
         <div class="row second_div from0to100">
             <div class="thats-how-image">
                 <img loading="lazy" decoding="async" src="<?php echo BASE_URL ?>webroot/images/dm-H-Process.png"
-                alt="image"/>
+                    alt="image" />
             </div>
         </div>
         <div
             class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_appear appear free-report seo-beat-ur-competitors wpb_start_animation animated second_div fromRightToLeft">
             <div class="wpb_wrapper">
-                <h3 class="free-report-head blue-col" style="font-size: 25px;">BEAT YOUR COMPETITORS! <span
+                <h3 class="free-report-head blue-col">BEAT YOUR COMPETITORS! <span
                         class="seo-orange fw-600 txt-caps"> To know How</span></h3>
                 <p class="mb-0"><a class="beat-your-customer" id="click-form" href="#"> <img decoding="async"
-                            style="height: 100%;"
-                            src="<?php echo BASE_URL ?>webroot/images/seo-beat-ur-compet-Click-Icon.png" alt="click-icon">
+                            src="<?php echo BASE_URL ?>webroot/images/seo-beat-ur-compet-Click-Icon.png"
+                            alt="click-icon" loading="lazy" />
                         CLICK HERE </a></p>
 
             </div>
@@ -195,7 +195,7 @@
                     ?>
                     <div class="sd_boxx col-6 col-md-3 col-lg-3 p-2 mb-4 mt-4">
                         <img src="<?php echo BASE_URL . 'webroot/images/services/' . $s_data['service_image']; ?>"
-                            alt="Top branding agency in Delhi – Ritz Media World" />
+                            alt="Top branding agency in Delhi – Ritz Media World" loading="lazy" />
                         <h2><?php echo $s_data['service_title']; ?></h2>
                         <?php echo $s_data['description']; ?>
                     </div>
@@ -219,7 +219,8 @@
         <div class="container">
             <h2><?= $why_choose[0]['how_we_work_head']; ?></h2>
             <p>
-                As the most reputed and trusted digital marketing agency, we continue to strive towards
+                As the most reputed and trusted <a href="https://ritzmediaworld.com/contact.html">Digital Marketing
+                    Services Delhi NCR</a>, we continue to strive towards
                 maintaining excellence, following an approach that allows us to be the best choice among our
                 clients.
             </p>
@@ -228,22 +229,22 @@
                     <div class="row d-flex justify-content-center">
                         <div class="how-we-work-div mx-4 my-3">
                             <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-customer-oriented-icon.png"
-                                alt="image1">
+                                alt="image1" loading="lazy" />
                             <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[1]; ?></p>
                         </div>
                         <div class="how-we-work-div mx-4 my-3">
                             <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-High-End-icon.png"
-                                alt="image2">
+                                alt="image2" loading="lazy" />
                             <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[2]; ?></p>
                         </div>
                         <div class="how-we-work-div mx-4 my-3">
                             <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-skilled-creativeteam-icon.png"
-                                alt="image3">
+                                alt="image3" loading="lazy" />
                             <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[3]; ?></p>
                         </div>
                         <div class="how-we-work-div mx-4 my-3">
                             <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-Competetive-icon.png"
-                                alt="image4">
+                                alt="image4" loading="lazy" />
                             <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[4]; ?></p>
                         </div>
                     </div>
@@ -285,7 +286,7 @@
                 <li>Team of seasoned marketing enthusiast </li>
             </ol>
             <div class="list_icon"><img src="<?php echo BASE_URL; ?>webroot/front/images/list_image.jpg"
-                    alt="Best Digital Agency for Your Business - Ritz Media World" /></div>
+                    alt="Best Digital Agency for Your Business - Ritz Media World" loading="lazy" /></div>
         </div>
 
         <div class="list_box2">
@@ -312,7 +313,7 @@
             ?>
             <div class="logo col-6">
                 <img src="<?php echo BASE_URL . 'webroot/images/customers/' . $c_data['customer_image']; ?>"
-                    class="img-fluid" alt="Clients - Ritz Media World">
+                    class="img-fluid" alt="Clients - Ritz Media World" loading="lazy" />
             </div>
         <?php } ?>
     </section>
@@ -351,7 +352,8 @@
                                         </div>
                                         <div class="testimonial-name">
                                             <img class="img-circle" src="<?= $src ?>"
-                                                alt="Top branding agency in Delhi – Ritz Media World"><b><?= $BannerData['member_name'] ?></b>
+                                                alt="Top branding agency in Delhi – Ritz Media World"
+                                                loading="lazy" /><b><?= $BannerData['member_name'] ?></b>
                                         </div>
                                         <div class="testimonial-name"><?= $BannerData['position'] ?></div>
                                     </div>
@@ -393,7 +395,8 @@
                                         <div class="item">
                                             <div class="col-text">
                                                 <div class="logo">
-                                                    <img src="<?= $src; ?>" class="img-fluid" alt="Ritz Media World - Client">
+                                                    <img src="<?= $src; ?>" class="img-fluid" alt="Ritz Media World - Client"
+                                                        loading="lazy" />
                                                     <b><?= $n_Data['title'] ?></b>
                                                 </div>
                                             </div>
@@ -409,7 +412,8 @@
                                     aria-label="Next">›</span></button>
                         </div>
                         <div class="owl-dots disabled">
-                            <button title="submit_button" role="button" class="owl-dot active"><span></span>
+                            <button title="submit_button" role="button" class="owl-dot active"
+                                aria-label="Slide 1"><span>d</span>
                             </button>
                         </div>
                     </div>
@@ -441,7 +445,7 @@
                                             <div class="col-text">
                                                 <div class="logo">
                                                     <img src="<?= $src; ?>" class="img-fluid"
-                                                        alt="Best Digital Agency - Ritz Media World">
+                                                        alt="Best Digital Agency - Ritz Media World" loading="lazy" />
                                                 </div>
                                             </div>
                                         </div>
@@ -457,7 +461,8 @@
                                     aria-label="Next">›</span></button>
                         </div>
                         <div class="owl-dots disabled">
-                            <button title="submit_button" role="button" class="owl-dot active"><span></span></button>
+                            <button title="submit_button" role="button" class="owl-dot active"
+                                aria-label="Slide 1"><span>d</span></button>
                         </div>
                     </div>
                 </div>
@@ -489,7 +494,7 @@
                                     $month = date("M", strtotime($BlogData['add_date']));
                                     ?>
                                     <div class="col-md-3 mb-3">
-                                        <div class="card shadow-sm" style="width: 100%; border-radius: 8px;">
+                                        <div class="card shadow-sm">
                                             <?php
                                             $src = 'webroot/images/blog_not_found.jpg';
                                             $imagename = $BlogData['blog_image1'];
@@ -501,7 +506,7 @@
                                             <a href="<?= BASE_URL ?>blog/<?= $url_title; ?>">
                                                 <img src="<?= BASE_URL . $src ?>" class="card-img-top"
                                                     alt="Ritz Media World - Blogs"
-                                                    style="height: 200px; object-fit: cover; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                                                    loading="lazy" />
                                             </a>
                                             <div class="card-body text-center">
                                                 <h5 class="card-title"><?= htmlspecialchars($BlogData['title']) ?></h5>

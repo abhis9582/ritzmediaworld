@@ -69,10 +69,6 @@
 		$menu_list = $this->db->get()->result_array();
 		?>
 		<div class="row">
-			<!-- <h1>Creative services</h1>
-			<?= $Content[0]['page_description'] ?>
-			<h1>Our Services</h1> -->
-			<p><?php echo $head_titles[0]['title2']; ?></p>
 			<div class="container">
 				<div class="row">
 					<?php foreach ($menu_list as $list) {

@@ -21,32 +21,32 @@
 					<ul class="d-flex justify-content-center">
 						<?php if (!empty($Systemdata[0]['facebook_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['facebook_url'] ?>"><i
-											class="fa-brands fa-facebook"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['facebook_url'] ?>"
+										aria-label="facebook"><i class="fa-brands fa-facebook"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['youtube_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['youtube_url'] ?>"><i
-											class="fa-brands fa-youtube"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['youtube_url'] ?>"
+										aria-label="youtube"><i class="fa-brands fa-youtube"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['twitter_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['twitter_url'] ?>"><i
-											class="fa-brands fa-twitter"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['twitter_url'] ?>"
+										aria-label="twitter"><i class="fa-brands fa-twitter"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['linkedin_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['linkedin_url'] ?>"><i
-											class="fa-brands fa-linkedin"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['linkedin_url'] ?>"
+										aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a></div>
 							</li>
 						<?php }
 						if (!empty($Systemdata[0]['vimeo_url'])) { ?>
 							<li>
-								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['vimeo_url'] ?>"><i
-											class="fa-brands fa-instagram"></i></a></div>
+								<div class="footer-icons mx-2"><a href="<?= $Systemdata[0]['vimeo_url'] ?>"
+										aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></div>
 							</li>
 						<?php } ?>
 					</ul>
@@ -77,8 +77,8 @@
 				<h3 class="my-5">Our Offices</h3>
 				<span>Address: 402 – 404 , 4th floor Corporate Park, <br>Tower A1 Sector 142 , Greater Noida</span><br>
 				<span><i class="fa fa-phone mr-2 mt-2"></i><a href="tel:09220516777" class="text-light">09220516777</a>,
-				<a class="text-light" href="tel:07290002168">07290002168</a></span><br>
-				<span>Email: info@ritzmediaworld.com</span>
+					<a class="text-light" href="tel:07290002168">07290002168</a></span><br>
+				<span class="d-flex">Email: &nbsp; <span id="email_id"></span></span>
 				<div class="row mt-3 d-flex justify-content-center">
 					<div class="div mx-2">
 						<img src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner" height="55px">
@@ -137,12 +137,24 @@
 		</p>
 		<div style="display: flex; justify-content: flex-end; gap: 10px;">
 			<button id="popup-accept"
-				style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 1rem; cursor: pointer;">I Agree</button>
+				style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 1rem; cursor: pointer;">I
+				Agree</button>
 			<button id="popup-decline"
 				style="background-color: red; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 1rem; cursor: pointer;">Decline</button>
 		</div>
 	</div>
+	<script type="text/javascript">
+		// Email parts
+		var user = 'info';
+		var domain = 'ritzmediaworld';
+		var tld = 'com';
 
+		// Combine them into a full email address
+		var email = user + '@' + domain + '.' + tld;
+
+		// Inject the email into the webpage
+		document.getElementById('email_id').innerHTML =  " "+ email;
+	</script>
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			const banner = document.getElementById('cookie-banner');
@@ -295,13 +307,19 @@
 				dots: true,
 				autoplayTimeout: 4000,
 				smartSpeed: 450,
+				onInitialized: function (event) {
+					// Adding aria-labels to each owl-dot button
+					$('.owl-dot').each(function (index) {
+						$(this).attr('aria-label', 'Slide ' + (index + 1));
+					});
+				}
 			});
 		});
 	</script>
 	<script src="<?= FRONT_DIR ?>js/customjquery.js"></script>
 	<!-- <script src="<?= FRONT_DIR ?>js/bootnavbar.js" ></script> -->
 
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
 	<script>
 		$(function () {
 			// $('#main_navbar').bootnavbar();

@@ -56,6 +56,8 @@ class Content extends CI_Controller
 	public function about()
 	{
 		$data['Content'] = $this->content_model->GetContentByID(2);
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		//$data['Thought_Content'] =  $this->content_model->GetContentByID(12);
 		$this->load->view('front/content/about', $data);
 	}
@@ -331,6 +333,8 @@ class Content extends CI_Controller
 		$data['OurTeam1'] = $this->gallery_model->getALLourTeamByCatIDFRont('1');
 		$data['OurTeam2'] = $this->gallery_model->getALLourTeamByCatIDFRont('2');
 		$data['OurTeam3'] = $this->gallery_model->getALLourTeamByCatIDFRont('3');
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		$this->load->view('front/content/management', $data);
 	}
 
@@ -384,6 +388,9 @@ class Content extends CI_Controller
 
 	public function common($id)
 	{
+		$data['noRecordFound'] =  null;	
+		$data['RelatedBlogs'] =  null;	
+		$data['RecentBlogs'] =  null;	
 		$data['Content'] = $this->content_model->GetContentByID($id);
 		$this->load->view('front/content/common', $data);
 	}
@@ -398,6 +405,8 @@ class Content extends CI_Controller
 	public function creativeservices($id)
 	{
 		$data['Category'] = $this->home_model->getALLCategories();
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		$data['id'] = $id;
 		// $this->dd($data['Category']);
 		$this->load->view('front/content/creative-services', $data);
@@ -427,6 +436,8 @@ class Content extends CI_Controller
 	{
 		$data['Service'] = $this->home_model->getALLServices();
 		$data['Submenu'] = $this->home_model->getALLSubmenu($id);
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		$data['id'] = $id;
 		$this->load->view('front/content/branding-and-identity-development', $data);
 	}
@@ -594,6 +605,8 @@ class Content extends CI_Controller
 	public function contact()
 	{
 		$data['Content'] = $this->content_model->GetContentByID(21);
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		if ($this->input->post('submit_contact') && $this->input->post('submit_contact') != "") {
 			$config = array(
 				array('field' => 'name', 'label' => 'Name', 'rules' => 'trim|required|xss_clean'),

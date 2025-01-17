@@ -10,7 +10,7 @@ class Home_Model extends CI_Model
 		$this->db->from('bh_visitors');
 		$this->db->where('visitor', $ip);
 		$result = $this->db->get()->num_rows();
-
+		$id = 0;
 		if ($result > 0) {
 
 		} else {

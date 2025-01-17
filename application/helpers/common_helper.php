@@ -501,37 +501,6 @@ function header_menu()
 						<li class="nav-item <?= ($_SERVER['REQUEST_URI'] == '/#') ? 'active' : ''; ?>">
 							<a class="nav-link" href="<?php echo BASE_URL; ?>work.html">Our Work</a>
 						</li>
-						<!--<li class="nav-item <?= ($_SERVER['REQUEST_URI'] == '/#') ? 'active' : ''; ?>">-->
-						<!--	<a class="nav-link" href="<?php echo BASE_URL; ?>resource.html">Resource</a>-->
-						<!--</li>-->
-						<!--<li-->
-						<!--	class="nav-item <?= ($_SERVER['REQUEST_URI'] == '/industry.html' || $_SERVER['REQUEST_URI'] == '/b2b.html' || $_SERVER['REQUEST_URI'] == '/healthcare.html' || $_SERVER['REQUEST_URI'] == '/realestate.html' || $_SERVER['REQUEST_URI'] == '/education.html') ? 'active' : ''; ?> dropdown">-->
-						<!--	<a class="nav-link dropdown-toggle industry-link" href="<?= BASE_URL ?>industry.html"-->
-						<!--		id="navbarDropdown3" title="Industry" role="button" aria-label="Submit" data-toggle="dropdown"-->
-						<!--		aria-haspopup="true" aria-expanded="false">Industry</a>-->
-						<!--	<ul class="dropdown-menu industry-dropdown" aria-labelledby="navbarDropdown3" style="background-color: #001240 !important;">-->
-						<!--		<li class="nav-item dropdown">-->
-						<!--			<a class="dropdown-item" href="<?= BASE_URL ?>industry.html" id="navbarDropdown4">BFSI</a>-->
-						<!--		</li>-->
-						<!--		<li class="nav-item dropdown">-->
-						<!--			<a class="dropdown-item" href="<?= BASE_URL ?>b2b-industry.html" id="navbarDropdown6"-->
-						<!--				title="B2B" role="button" aria-label="Submit">B2B</a>-->
-						<!--		</li>-->
-						<!--		<li class="nav-item dropdown">-->
-						<!--			<a class="dropdown-item" href="<?= BASE_URL ?>healthcare-industry.html" id="navbarDropdown7"-->
-						<!--				title="Healthcare" role="button" aria-label="Submit">HealthCare</a>-->
-						<!--		</li>-->
-						<!--		<li class="nav-item dropdown">-->
-						<!--			<a class="dropdown-item" href="<?= BASE_URL ?>realestate-industry.html" id="navbarDropdown8"-->
-						<!--				title="Real-estate" role="button" aria-label="Submit">Real-Estate</a>-->
-						<!--		</li>-->
-						<!--		<li class="nav-item dropdown">-->
-						<!--			<a class="dropdown-item" href="<?= BASE_URL ?>education-industry.html" id="navbarDropdown9"-->
-						<!--				title="Education" role="button" aria-label="Submit">Education</a>-->
-						<!--		</li>-->
-						<!--	</ul>-->
-
-						<!--</li>-->
 						<li class="nav-item <?= ($_SERVER['REQUEST_URI'] == '/#') ? 'active' : ''; ?>">
 							<a class="nav-link" href="<?php echo BASE_URL; ?>blogs">Blogs</a>
 						</li>

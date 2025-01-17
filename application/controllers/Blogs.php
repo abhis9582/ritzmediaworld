@@ -66,22 +66,12 @@ class Blogs extends CI_Controller
 		$data['Blogs'] = $this->get_data($config['per_page'], $page);
 		// Create pagination links
 		$data['pagination_links'] = $this->pagination->create_links();
-
-		// Load the view
-		//$this->load->view('blogs_view', $data);
 		$data['Content'] = $this->content_model->GetContentByID(28);
-		// if ($this->input->post('search_key')) {
-		// 	$data['Blogs'] = $this->blog_model->getALLBlogsBySearch();
-		// } else {
-		// 	$data['Blogs'] = $this->blog_model->getALLBlogsFront();
-		// }
-		// // $data['RecentBlogs'] =$this->blog_model->getRecentBlogs();
 		$data['All_BLOG_Category'] = $this->blog_model->getALLBlogCategoryWithBlog();
 		$data['Category_list'] = $this->blog_model->allCategoryList();
 		$data['Featured_Category'] = $this->blog_model->getALLBlogFeaturedCategory();
-		// echo "<pre>";
-		// print_r($data['All_BLOG_Category']);
-		// exit();
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		$this->load->view('front/blogs/index', $data);
 	}
 	public function get_data($limit, $start)
@@ -136,6 +126,7 @@ class Blogs extends CI_Controller
 		$data['allBlogVisitors'] = $this->blog_model->getBlogVisitors($id);
 		$data['Content'] = $this->content_model->GetContentByID(28);
 		$data['RelatedBlogs'] = $this->blog_model->getRelatedBlogs($id);
+		$data['RecentBlogs'] = null;
 		$data['BlogData'] = $this->blog_model->GetBlogByID($id);
 		$data['RecentBlogs'] = $this->blog_model->getRecentBlogs();
 		$data['All_BLOG_Category'] = $this->blog_model->getALLBlogCategoryWithBlog();
@@ -198,6 +189,8 @@ class Blogs extends CI_Controller
 		$data['All_BLOG_Category'] = $this->blog_model->getALLBlogCategoryWithBlog();
 		$data['Category_list'] = $this->blog_model->allCategoryList();
 		$data['Featured_Category'] = $this->blog_model->getALLBlogFeaturedCategory();
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		// echo "<pre>";
 		// print_r($data['All_BLOG_Category']);
 		// exit();
