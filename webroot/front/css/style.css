@@ -4589,18 +4589,6 @@ html {
   animation: shine .75s
 }
 
-@-webkit-keyframes shine {
-  100% {
-    left: 125%
-  }
-}
-
-@keyframes shine {
-  100% {
-    left: 125%
-  }
-}
-
 .Surrounding_div {
   margin: 0 -30px
 }
