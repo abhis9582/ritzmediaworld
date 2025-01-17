@@ -13,16 +13,10 @@
     <meta name="keyword" content="<?= $Submenu[0]['meta_keywords'] ?>"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/new-common.css">
     <!-- <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/style.css"> -->
     <?php $this->load->view("Element/front/header_common.php"); ?>
 </head>
-<style>
-    body {
-        font-family: "Lexend", serif !important;
-    }
-</style>
 
 <body>
     <?php $this->load->view("Element/front/header.php"); ?>

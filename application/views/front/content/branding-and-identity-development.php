@@ -9,32 +9,11 @@
     <title><?= $Submenu[0]['meta_title'] ?></title>
     <meta name="description" content="<?= $Submenu[0]['meta_description'] ?>">
     <meta name="keyword" content="<?= $Submenu[0]['meta_keywords'] ?>">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1491326822260603');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1491326822260603&ev=PageView&noscript=1" />
-    </noscript>
     <?php $this->load->view("Element/front/header_common.php"); ?>
 </head>
 <style>
     body{
-        font-family: "Lexend", serif !important;
+        font-style: Lexend !important;
     }
 </style>
 <body>
@@ -68,11 +47,6 @@
 
     <!--end of about-us section1-->
     <div class="container">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
         <?php
         $this->db->select('*');
         $this->db->from('bh_submenu_content');
@@ -111,21 +85,33 @@
                         </div>
                     <?php } else { ?>
                         <div class="row">
-                        <div class="col-md-2"></div>
+                            <div class="col-md-2"></div>
                             <div class="col-md-4">
                                 <h2 style="color : #b07f22 !important;"><?= $submenu_desc_data[$i]['heading'] ?></h2>
                                 <p class="text-left"><?= $submenu_desc_data[$i]['head_desc'] ?></p>
                             </div>
                             <div class="col-md-4">
-                                <img class="w-100" src="<?php echo BASE_URL . '/webroot/images/submenu/' . $submenu_desc_data[$i]['img'] ?>"
+                                <img class="w-100"
+                                    src="<?php echo BASE_URL . '/webroot/images/submenu/' . $submenu_desc_data[$i]['img'] ?>"
                                     alt=" " width="400px" height="250px">
                             </div>
                         </div>
                     <?php } ?>
                 </div>
             <?php } ?>
-            <div class="row my-5">
-                <div class="col-1"></div>
+            <div class="row my-5 d-flex justify-content-center">
+                <div
+                    class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_appear appear free-report seo-beat-ur-competitors wpb_start_animation animated second_div">
+                    <div class="wpb_wrapper">
+                        <h3 class="free-report-head blue-col">BEAT YOUR COMPETITORS! <span
+                                class="seo-orange fw-600 txt-caps"> To know How</span></h3>
+                        <p class="mb-0"><a class="beat-your-customer" id="open-form-popup" href="#"> <img decoding="async"
+                                    src="<?php echo BASE_URL ?>webroot/images/seo-beat-ur-compet-Click-Icon.png"
+                                    alt="click-icon" loading="lazy" />
+                                CLICK HERE </a></p>
+
+                    </div>
+                </div>
                 <div class="col-10 mt-5">
                     <p><?= $Submenu[0]['last_desc'] ?></p>
                 </div>
@@ -138,3 +124,20 @@
 
     <?php $this->load->view("Element/front/footer.php"); ?>
     <?php $this->load->view("Element/front/footer_common.php"); ?>
+    <script>
+        var button = document.getElementById("open-form-popup");
+        var closeBtn = document.getElementById("closeFormBtn");
+        button.addEventListener("click", function () {
+            contactForm.classList.toggle("active");
+        });
+        closeBtn.addEventListener("click", function () {
+            contactForm.classList.remove("active");
+        });
+
+        // Close the popup form when clicking outside the form container
+        window.addEventListener("click", function (event) {
+            if (event.target === contactForm) {
+                contactForm.classList.remove("active");
+            }
+        });
+    </script>

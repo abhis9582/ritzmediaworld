@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="">
     <title><?php echo $Content[0]['meta_title'] ?></title>
@@ -33,7 +32,6 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YHLN54GF7"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -41,24 +39,6 @@
         gtag('config', 'G-0YHLN54GF7');
     </script>
     <meta name="google-site-verification" content="UJDMaKvPAV5eAGJrDzTOTmxfhqT2OrUPSxwlVnAcgHs" />
-    <!-- <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1491326822260603');
-        fbq('track', 'PageView');
-    </script> -->
-    <noscript><img class="image_home" height="1" width="1"
-            src="https://www.facebook.com/tr?id=1491326822260603&ev=PageView&noscript=1" />
-    </noscript>
     <script type="application/ld+json">
         {
          "@context": "https://schema.org",
@@ -101,11 +81,6 @@
     </script>
     <?php $this->load->view("Element/front/header_common.php"); ?>
 </head>
-<style>
-    body {
-        font-family: "Lexend", serif !important;
-    }
-</style>
 
 <body>
     <?php $this->load->view("Element/front/header.php"); ?>
@@ -148,8 +123,8 @@
         <div
             class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_appear appear free-report seo-beat-ur-competitors wpb_start_animation animated second_div fromRightToLeft">
             <div class="wpb_wrapper">
-                <h3 class="free-report-head blue-col">BEAT YOUR COMPETITORS! <span
-                        class="seo-orange fw-600 txt-caps"> To know How</span></h3>
+                <h3 class="free-report-head blue-col">BEAT YOUR COMPETITORS! <span class="seo-orange fw-600 txt-caps">
+                        To know How</span></h3>
                 <p class="mb-0"><a class="beat-your-customer" id="click-form" href="#"> <img decoding="async"
                             src="<?php echo BASE_URL ?>webroot/images/seo-beat-ur-compet-Click-Icon.png"
                             alt="click-icon" loading="lazy" />
@@ -505,8 +480,7 @@
                                             ?>
                                             <a href="<?= BASE_URL ?>blog/<?= $url_title; ?>">
                                                 <img src="<?= BASE_URL . $src ?>" class="card-img-top"
-                                                    alt="Ritz Media World - Blogs"
-                                                    loading="lazy" />
+                                                    alt="Ritz Media World - Blogs" loading="lazy" />
                                             </a>
                                             <div class="card-body text-center">
                                                 <h5 class="card-title"><?= htmlspecialchars($BlogData['title']) ?></h5>
@@ -569,8 +543,10 @@
             }
         });
     </script>
+    <script src="<?= FRONT_DIR ?>js/bootstrap.min.js"></script>
+    <script src="<?= FRONT_DIR ?>js/popper.min.js"></script>
+    <script src="<?= FRONT_DIR ?>js/owl.carousel.min.js"></script>
     <?php $this->load->view("Element/front/footer_home.php"); ?>
-    <?php $this->load->view("Element/front/footer_common.php"); ?>
 
 
 </body>

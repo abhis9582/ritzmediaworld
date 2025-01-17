@@ -41,20 +41,19 @@
                     </li>
                 <?php } ?>
                 <li><a class="web-story-button" href="<?= BASE_URL ?>web-story">story</a></li>
-                <li><a href="#"><img class="image_google_partner" height="50px"
-                            src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner"></a></li>
-                <li><a href="#"><img height="50px" class="image_google_partner"
-                            src="<?= FRONT_DIR ?>images/meta-partner-logo.png" alt="google partner"></a></li>
+                <li><img class="image_google_partner" height="50px"
+                            src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner"></li>
+                <li><img height="50px" class="image_google_partner"
+                            src="<?= FRONT_DIR ?>images/meta-partner-logo.png" alt="meta partner"></li>
             </ul>
             <!-- Request Button on the Right -->
             <div class="request-callback">
-                <!-- <a href="<?= BASE_URL ?>enquiries.html"> -->
                 <button class="top_header_button" id="openFormBtn">REQUEST A CALLBACK</button>
-                <!-- </a> -->
             </div>
         </div>
     </div>
 </div>
+<!-- popup form -->
 <div id="contactForm" class="popup-form">
     <div class="form-container">
         <span id="closeFormBtn" class="close-btn">&times;</span>
@@ -91,6 +90,7 @@
 
     </div>
 </div>
+
 <?php
 $class = $this->router->fetch_class();
 $method = $this->router->fetch_method();

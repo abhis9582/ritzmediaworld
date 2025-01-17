@@ -9,12 +9,6 @@
     <title><?= $Content[0]['meta_title'] ?></title>
     <meta name="description" content="<?= $Content[0]['meta_description'] ?>">
     <meta name="keyword" content="<?= $Content[0]['meta_keywords'] ?>">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Lexend", serif !important;
-        }
-    </style>
     <?php $this->load->view("Element/front/header_common.php"); ?>
 </head>
 

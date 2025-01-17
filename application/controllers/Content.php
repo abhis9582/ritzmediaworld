@@ -104,8 +104,8 @@ class Content extends CI_Controller
 					'post_apply' => $this->input->post('post_apply'),
 					'email' => $this->input->post('email')
 				);
-				// $this->db->insert('bh_career', $updata);
-				//$id = $this->db->insert_id();
+				$this->db->insert('bh_career', $updata);
+				$id = $this->db->insert_id();
 				$FileName = '';
 				if ($_FILES['cv']['name']) {
 					$error_view_url = 'admin/user/edit';
@@ -232,101 +232,6 @@ class Content extends CI_Controller
 		}
 	}
 
-	public function weddings()
-	{
-		$data['Content'] = $this->content_model->GetContentByID(27);
-		$data['Wedding'] = $this->content_model->GetAllWedding();
-		if ($this->input->post('submit_contact') && $this->input->post('submit_contact') != "") {
-			$config = array(
-				array('field' => 'name', 'label' => 'Name', 'rules' => 'trim|required|xss_clean'),
-				array('field' => 'email', 'label' => 'Email', 'rules' => 'trim|required|xss_clean'),
-				array('field' => 'mobile', 'label' => 'Mobile Number', 'rules' => 'trim|required|xss_clean'),
-				array('field' => 'message', 'label' => 'Message', 'rules' => 'trim|required|xss_clean')
-			);
-			$this->form_validation->set_rules($config);
-			if ($this->form_validation->run() === FALSE) {
-				$this->load->view('front/content/weddings', $data);
-			} else {
-				$updata = array(
-					'name' => $this->input->post('name'),
-					'contact_number' => $this->input->post('mobile_number'),
-					'message' => $this->input->post('message'),
-					'post_apply' => $this->input->post('post_apply'),
-					'email' => $this->input->post('email')
-				);
-				// $this->db->insert('bh_career', $updata);
-				// $id = $this->db->insert_id();
-
-				$FileName = '';
-				if ($_FILES['cv']['name']) {
-					$error_view_url = 'admin/user/edit';
-					$FileName = $this->commonmod_model->uploadCommonFile('./webroot/images/original/', './webroot/images/cv/', '5048', '0', '0', 'cv', $error_view_url);
-					if ($FileName != '') {
-						$upd_data = array("cv" => $FileName);
-						//$this->db->where('id', $id);
-						//$this->db->update('bh_career', $upd_data);
-					}
-				}
-
-				/*  Send Admin Email  */
-				$config2['protocol'] = 'sendmail';
-				$config2['mailpath'] = '/usr/sbin/sendmail';
-				$config2['mailtype'] = 'html';
-				$config2['charset'] = 'iso-8859-1';
-				$config2['wordwrap'] = TRUE;
-				$this->email->initialize($config2);
-				$cv = '';
-				if ($FileName != "") {
-					$cquery = $this->db->query("Select cv from bh_career where id='" . $id . "'");
-					$CarrerData = $cquery->row_array();
-					$cv = $this->image->getImageSrc("cv", $CarrerData['cv'], "");
-					$cv = '<a href="' . $cv . '" target="_blank">' . $cv . '</a>';
-				}
-				$this->email->from(FROM_EMAIL, FROM_NAME);
-				$this->email->to(ADMIN_EMAIL_ID);
-				$this->email->cc(CC_EMAIL_ID);
-				//$this->email->bcc('them@their-example.com');
-				$this->email->subject('Career| Ritz Media World');
-				$message = '<h2>' . WEBSITE_EMAIL_TITLE . '</h2>';
-				$message .= '<p>' . $this->input->post('name') . ' have contact with Us.</p>';
-				$message .= '<p>Name: ' . trim($this->input->post('name')) . '</p>';
-				$message .= '<p>Email: ' . trim($this->input->post('email')) . '</p>';
-				$message .= '<p>Mobile No: ' . trim($this->input->post('mobile')) . '</p>';
-				$message .= '<p>Property Name: ' . trim($this->input->post('property_name')) . '</p>';
-				$message .= '<p>Message: ' . trim($this->input->post('message')) . '</p>';
-				$message .= '<p>Thanks <br>
-				' . WEBSITE_SIGNATURE . '
-				</p>';
-				$this->email->message($message);
-				$this->email->send();
-				/*  Send User Email  */
-				$User_EmailId = $this->input->post('email');
-				$config2['protocol'] = 'sendmail';
-				$config2['mailpath'] = '/usr/sbin/sendmail';
-				$config2['mailtype'] = 'html';
-				$config2['charset'] = 'iso-8859-1';
-				$config2['wordwrap'] = TRUE;
-				$this->email->initialize($config2);
-				$this->email->from(FROM_EMAIL, FROM_NAME);
-				$this->email->to($User_EmailId);
-				//$this->email->cc(CC_EMAIL_ID);
-				//$this->email->bcc('them@their-example.com');
-				$this->email->subject('Wedding Request | Ritz Media World');
-				$message = '<h2>' . WEBSITE_EMAIL_TITLE . '</h2>';
-				$message .= '<p>Hi ' . trim($this->input->post('name')) . ' you have successfully send message, <br> We will contact you soon.</p>';
-				$message .= '<p>Thanks <br>
-				' . WEBSITE_SIGNATURE . '
-				</p>';
-				$this->email->message($message);
-				$this->email->send();
-				$this->session->set_flashdata('error', "Wedding Form is submitted successfully.");
-				redirect(BASE_URL . 'weddings.html');
-			}
-		} else {
-			$this->load->view('front/content/weddings', $data);
-		}
-	}
-
 	public function management()
 	{
 		$data['Content'] = $this->content_model->GetContentByID(23);
@@ -345,47 +250,6 @@ class Content extends CI_Controller
 		$this->load->view('front/content/howitworks', $data);
 	}
 
-	public function show_hotel_ajax()
-	{
-		$html = "";
-		$city = $this->input->post('city');
-		$hotel_id = $this->input->post('hotel_id');
-		$this->db->select("*");
-		$this->db->from('bh_support_listings');
-		$this->db->where("city", $city);
-		$this->db->order_by("listing_title", "asc");
-		$query = $this->db->get();
-		$all_data = $query->result_array();
-		if (count($all_data) > 0) {
-			$html = '<option value="">Select Hotel</option>';
-			foreach ($all_data as $singleData) {
-				//$url = $this->create_url($singleData['Title']);
-				if ($hotel_id == $singleData['id']) {
-					$class = 'selected';
-				} else {
-					$class = '';
-				}
-				$html .= '<option value="' . $singleData['id'] . '" ' . $class . '>' . $singleData['listing_title'] . '</option>';
-			}
-		}
-		echo json_encode($html);
-	}
-
-	public function search_hotel()
-	{
-		$city = $this->input->post('city');
-		$listing_id = $this->input->post('listing_id');
-		$start_date = $this->input->post('start_date');
-		$end_date = $this->input->post('end_date');
-		$this->session->set_userdata('city', $city);
-		$this->session->set_userdata('listing_id', $listing_id);
-		$this->session->set_userdata('start_date', $start_date);
-		$this->session->set_userdata('end_date', $end_date);
-		$ListingData = $this->listing_model->GetSupportListingByID($listing_id);
-		$redirectURL = BASE_URL . 'hotel/' . create_url($ListingData[0]['listing_title']) . '/' . $listing_id;
-		redirect($redirectURL);
-	}
-
 	public function common($id)
 	{
 		$data['noRecordFound'] =  null;	
@@ -395,13 +259,6 @@ class Content extends CI_Controller
 		$this->load->view('front/content/common', $data);
 	}
 
-	function dd($variable)
-	{
-		echo '<pre>';
-		var_dump($variable); // or use print_r($variable) if you prefer
-		echo '</pre>';
-		exit(); // Stop script execution
-	}
 	public function creativeservices($id)
 	{
 		$data['Category'] = $this->home_model->getALLCategories();

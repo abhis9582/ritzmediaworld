@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 * {
   margin: 0;
   padding: 0
@@ -42,16 +43,6 @@ a:hover {
   transition-duration: 1s;
   text-decoration: none
 }
-
-/* @font-face {
-  font-family: PierceRegular-6OWY;
-  src: url(../fonts/PierceRegular-6OWY.ttf)
-} */
-
-/* @font-face {
-  font-family: Elianto-Regular;
-  src: url(../fonts/Elianto-Regular.ttf)
-} */
 
 .container {
   width: 100%;
@@ -108,32 +99,6 @@ a:hover {
 .top-menu {
   flex-wrap: wrap;
 }
-
-/* .top_header_ul {
-  color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.top_header_ul li a {
-  color: #fff;
-  font-size: 30px;
-} */
-
-/* .top_header_button {
-  font-size: 12px;
-  font-weight: 600;
-  margin: 3px;
-  padding: 1px 5px;
-  border-radius: 5px;
-  border: none;
-} */
-
-/* .top_header ul{float:right;margin:3px 0 0 0;}
-.top_header ul li{float:left;font-size:14px;margin:0 0 0 20px}
-.top_header ul li a{color:#FFF;font-size:14px; margin:5px 0}
-.top_header ul li i{color:#FFF}
-.top_header ul li a img{margin:5px 0} */
 .btn1 {
   background: #FFF;
   color: #333 !important;
@@ -2047,7 +2012,6 @@ html {
 
 .main-header nav.navbar ul li a:hover {
   background: #915a00;
-  color: #001240;
   border-radius: 7px;
   transition: 1.2s;
 }
@@ -10341,9 +10305,6 @@ a img {
   top: -42px;
 }
 
-/* .container-2{
-  background-color: #001240;
-} */
 .first-container {
   background-color: #001240;
   padding: 10rem 4rem;
