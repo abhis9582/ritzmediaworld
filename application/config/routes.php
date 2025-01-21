@@ -100,10 +100,10 @@ $route['advertisement-concept-development.html'] = 'content/menudata/12';
 $route['scriptwriting.html'] = 'content/menudata/13';
 $route['voiceover-casting.html'] = 'content/menudata/14';
 $route['recording-and-production.html'] = 'content/menudata/15';
-$route['media-planning-and-buying.html'] = 'content/menudata/16';
+$route['radio-advertising-and-media-planning.html'] = 'content/menudata/16';
 $route['negotiating-ad-rates.html'] = 'content/menudata/18';
 //CELEBRITY ENDORSEMENTS SUBMENU
-$route['celebrity-selection.html'] = 'content/menudata/23';
+$route['celebrity-endorsements-and-selection.html'] = 'content/menudata/23';
 $route['negotiating-contracts.html'] = 'content/menudata/24';
 $route['creative-collaboration.html'] = 'content/menudata/25';
 $route['campaign-integration.html'] = 'content/menudata/26';

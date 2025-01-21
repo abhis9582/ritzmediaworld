@@ -88,9 +88,10 @@
 									$src = ($imagename) ? $imgpath . '/' . $imagename : "webroot/images/rap_temp.jpg";
 								}
 								?>
-								<img src="<?= BASE_URL . $src ?>" class="img-responsive blog-img" <?php if ($BlogData[0]['img1_size']) {
+								<!-- <img src="<?= BASE_URL . $src ?>" class="img-responsive blog-img" <?php if ($BlogData[0]['img1_size']) {
 										echo "style='width:" . $BlogData[0]['img1_size'] . "%'";
-									} ?> alt="image">
+									} ?> alt="image"> -->
+								<img src="<?= BASE_URL . $src ?>" class="img-responsive blog-img" alt="image">
 							</div>
 							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="media-body blog_main">

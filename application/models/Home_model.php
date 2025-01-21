@@ -200,7 +200,6 @@ class Home_Model extends CI_Model
 		$this->db->select("*");
 		$this->db->from('bh_services');
 		$this->db->order_by("id", "asc");
-
 		$query = $this->db->get();
 		return $query->result_array();
 	}

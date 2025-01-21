@@ -105,17 +105,16 @@
 <div id="cookie-banner">
 	<p>
 		We use cookies to improve your experience. By using our site, you agree to our use of cookies.
-		<a href="#" id="cookie-policy-link" style="color: #4CAF50; text-decoration: underline;">Learn more</a>.
+		<a href="#" id="cookie-policy-link">Learn more</a>.
 	</p>
 	<button id="accept-cookies">Accept</button>
-	<button id="reject-cookies" style="margin-left: 10px; background-color: red; color: white;">Reject</button>
+	<button id="reject-cookies">Reject</button>
 </div>
 
 <!-- Popup Modal -->
-<div id="cookie-policy-popup"
-	style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; background: white; width: 90%; max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
-	<h3 style="font-size: 1.2rem; margin-bottom: 10px;">Cookie Policy</h3>
-	<p style="font-size: 1rem; margin-bottom: 20px; line-height: 1.5;">
+<div id="cookie-policy-popup">
+	<h3>Cookie Policy</h3>
+	<p>
 		We use cookies to ensure that we give you the best experience on our website. This includes cookies from
 		third party social media websites and advertising cookies that may analyze your use of this site. Click "I
 		Agree" to agree or "Deny" to opt out. This Cookie Notice describes how and why Ritz Media World use cookies
@@ -123,15 +122,12 @@
 		course of our business through websites, products and services collectively, our “Websites”. It also
 		explains your rights to control our use of these tracking technologies. For additional information
 		about our privacy practices, please review our Privacy Notice.
-		<a href="https://ritzmediaworld.com/privacy-policy.html" target="_blank"
-			style="color: #4CAF50; text-decoration: underline;">Read Full Policy</a>.
+		<a class="cookie-text-footer" href="https://ritzmediaworld.com/privacy-policy.html" target="_blank">Read Full Policy</a>.
 	</p>
-	<div style="display: flex; justify-content: flex-end; gap: 10px;">
-		<button id="popup-accept"
-			style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 1rem; cursor: pointer;">I
+	<div class="cookie-div-footer">
+		<button id="popup-accept">I
 			Agree</button>
-		<button id="popup-decline"
-			style="background-color: red; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 1rem; cursor: pointer;">Decline</button>
+		<button id="popup-decline">Decline</button>
 	</div>
 </div>
 <script type="text/javascript">

@@ -11,11 +11,6 @@
     <meta name="keyword" content="<?= $Submenu[0]['meta_keywords'] ?>">
     <?php $this->load->view("Element/front/header_common.php"); ?>
 </head>
-<style>
-    body{
-        font-style: Lexend !important;
-    }
-</style>
 <body>
 
     <?php $this->load->view("Element/front/header.php"); ?>
@@ -54,10 +49,10 @@
         $submenu_desc_data = $this->db->get()->result_array();
 
         ?>
-        <div class="container mt-5">
-            <div class="row my-5 ">
+        <div class="container">
+            <div class="row">
                 <div class="col-1"></div>
-                <div class="col-10 mt-5">
+                <div class="col-10">
                     <p><?= $Submenu[0]['head_text'] ?></p>
                 </div>
             </div>

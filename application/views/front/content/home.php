@@ -29,55 +29,55 @@
     <!-- canonical link  -->
     <link rel="canonical" href="https://ritzmediaworld.com/">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YHLN54GF7"></script>
+    <script defer async src="https://www.googletagmanager.com/gtag/js?id=G-0YHLN54GF7"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script>
+    <script defer>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-0YHLN54GF7');
     </script>
     <meta name="google-site-verification" content="UJDMaKvPAV5eAGJrDzTOTmxfhqT2OrUPSxwlVnAcgHs" />
-    <script type="application/ld+json">
-        {
-         "@context": "https://schema.org",
-         "@type": "LocalBusiness",
-         "name": "Ritz Media World",
-         "address": {
-         "@type": "PostalAddress",
-         "streetAddress": "402-404, 4th Floor, Tower - A1, Corporate Park, Sector 142",
-         "addressLocality": "Greater Noida",
-         "addressRegion": "Uttar Pradesh",
-         "postalCode": "201305"
+    <script defer type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Ritz Media World",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "402-404, 4th Floor, Advant Navis Business Park Tower-A1, Corporate Park, Sector 142",
+            "addressLocality": "Noida",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "201305"
         },
         "image": "https://ritzmediaworld.com/webroot/front/images/nn_logo.jpg",
         "email": "info@ritzmediaworld.com",
         "telePhone": "+917290002168",
         "url": "https://ritzmediaworld.com",
         "paymentAccepted": [
-        "cash",
-        "check",
-        "credit card",
-        "invoice"
+            "cash",
+            "check",
+            "credit card",
+            "invoice"
         ],
         "openingHours": "Mo,Tu,We,Th,Fr 09:30-18:30",
         "openingHoursSpecification": [
-        {
+            {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
             ],
             "opens": "09:30",
             "closes": "18:30"
-        }
-    ],
+            }
+        ],
         "priceRange": "$"
-    }
+        }
     </script>
     <?php $this->load->view("Element/front/header_common.php"); ?>
 </head>
@@ -100,7 +100,7 @@
     </section>
 
     <section class="service_boxxx">
-        <div class="row mt-2 second_div fromLeftToRight">
+        <div class="row mt-2 second_div">
             <div class="col-md-3 d-flex justify-content-end mobile-img">
                 <img class="mt-3" decoding="async" src="<?php echo BASE_URL ?>webroot/images/seo-How-We-Work-Icon.png"
                     alt="how we work" loading="lazy" />
@@ -114,14 +114,14 @@
                 YOUR BUSINESS GOALS!
             </span>
         </div>
-        <div class="row second_div from0to100">
+        <div class="row second_div">
             <div class="thats-how-image">
                 <img loading="lazy" decoding="async" src="<?php echo BASE_URL ?>webroot/images/dm-H-Process.png"
                     alt="image" />
             </div>
         </div>
         <div
-            class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_appear appear free-report seo-beat-ur-competitors wpb_start_animation animated second_div fromRightToLeft">
+            class="wpb_text_column wpb_content_element wpb_animate_when_almost_visible wpb_appear appear free-report seo-beat-ur-competitors wpb_start_animation animated second_div">
             <div class="wpb_wrapper">
                 <h3 class="free-report-head blue-col">BEAT YOUR COMPETITORS! <span class="seo-orange fw-600 txt-caps">
                         To know How</span></h3>
@@ -161,26 +161,26 @@
         </div>
     </section>
 
-    <div class="service_boxxx mb-5">
+    <div class="service_boxxx">
         <h2>Our Services</h2>
         <p><?php echo $head_titles[0]['title2']; ?></p>
-        <div class="container">
+        <div href="#" class="container">
             <div class="row ml-2 mr-2">
                 <?php foreach ($Service as $s_data) {
                     ?>
-                    <div class="sd_boxx col-6 col-md-3 col-lg-3 p-2 mb-4 mt-4">
+                    <a href="<?= BASE_URL. $s_data['slug_url']?>" class="sd_boxx col-6 col-md-3 col-lg-3 p-2 mb-4 mt-4">
                         <img src="<?php echo BASE_URL . 'webroot/images/services/' . $s_data['service_image']; ?>"
-                            alt="Top branding agency in Delhi – Ritz Media World" loading="lazy" />
+                            alt="Top branding agency in Delhi – Ritz Media World" loading="lazy" width="100px" height="100px"/>
                         <h2><?php echo $s_data['service_title']; ?></h2>
                         <?php echo $s_data['description']; ?>
-                    </div>
+                    </a>
                 <?php } ?>
             </div>
-        </div>
+        </d>
     </div>
 
-    <section class="service_boxxx second_div fromBottomToTop">
-        <h2 class="mt-5"><?= $why_choose[0]['our_vision_head']; ?></h2>
+    <section class="service_boxxx second_div">
+        <h2><?= $why_choose[0]['our_vision_head']; ?></h2>
         <div class="container">
             <div class="row row2">
                 <div class="col-lg-12">
