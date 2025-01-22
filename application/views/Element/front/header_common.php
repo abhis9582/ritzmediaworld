@@ -1,13 +1,14 @@
 <link href="<?php echo FRONT_DIR ?>images/fav-icon.png" rel="icon" type="image/x-icon" />
-<link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/font-awesome.css">
-<link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/bootnavbar.css">
+<!-- <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/font-awesome.css"> -->
+<!-- <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/bootnavbar.css"> -->
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/owl.carousel.min.css">
-<link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/owl.theme.default.min.css">
+<!-- <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/owl.theme.default.min.css"> -->
 <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/style.css">
-<link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/jquery.css">
+<!-- <link rel="stylesheet" href="<?php echo FRONT_DIR ?>css/jquery.css"> -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
 <script src="<?php echo FRONT_DIR ?>js/jquery.min.js"></script>
 <script src="<?php echo FRONT_DIR ?>js/jquery.validate.min.js" type="text/javascript"></script>
 <script src="<?php echo FRONT_DIR ?>js/sweetalert.js"></script>

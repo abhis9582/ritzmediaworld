@@ -96,7 +96,7 @@
 			<span>Address: 402 – 404 , 4th floor Corporate Park, <br>Tower A1 Sector 142 , Greater Noida</span><br>
 			<span><i class="fa fa-phone mr-2 mt-2"></i><a href="tel:09220516777" class="text-light">09220516777</a>,
 				<a class="text-light" href="tel:07290002168">07290002168</a></span><br>
-			<span class="d-flex">Email:&nbsp; <span id="email"></span></span>
+			<span class="d-flex">Email:&nbsp; <span id="email-fo"></span></span>
 			<div class="row mt-3 d-flex justify-content-center">
 				<div class="div mx-2">
 					<img src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner" height="55px">
@@ -138,7 +138,7 @@
 	// Combine them into a full email address
 	var email = user + '@' + domain + '.' + tld;
 	// Inject the email into the webpage
-	document.getElementById('email').innerHTML = " " + email;
+	document.getElementById('email-fo').innerHTML = " " + email;
 </script>
 <script src="<?= FRONT_DIR ?>js/bootstrap.min.js"></script>
 <script src="<?= FRONT_DIR ?>js/owl.carousel.min.js"></script>
