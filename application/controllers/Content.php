@@ -218,11 +218,7 @@ class Content extends CI_Controller
 					$message .= '<p>Message: ' . trim($updata['message']) . '</p>';
 					$result = $this->sendEmail($subject, $message);
 					// Check if the email was sent successfully
-					if ($result == 0) {
-						$this->session->set_flashdata('error', "An error occured.");
-					} else {
-						$this->session->set_flashdata('success', "Enquiry Form is submitted successfully.");
-					}
+					$this->session->set_flashdata('success', "Enquiry Form is submitted successfully.");
 					redirect(BASE_URL . 'enquiries.html');
 					exit;
 				}
@@ -252,9 +248,9 @@ class Content extends CI_Controller
 
 	public function common($id)
 	{
-		$data['noRecordFound'] =  null;	
-		$data['RelatedBlogs'] =  null;	
-		$data['RecentBlogs'] =  null;	
+		$data['noRecordFound'] = null;
+		$data['RelatedBlogs'] = null;
+		$data['RecentBlogs'] = null;
 		$data['Content'] = $this->content_model->GetContentByID($id);
 		$this->load->view('front/content/common', $data);
 	}
@@ -268,7 +264,8 @@ class Content extends CI_Controller
 		// $this->dd($data['Category']);
 		$this->load->view('front/content/creative-services', $data);
 	}
-	public function webStory(){
+	public function webStory()
+	{
 		$data['webStory'] = $this->admin_model->getALLWebStories();
 		$this->load->view('front/content/web-story', $data);
 	}
@@ -282,7 +279,7 @@ class Content extends CI_Controller
 		$data['Content'] = $this->content_model->GetPolicy('privacy-policy.html');
 		$this->load->view('front/content/privacy-policy', $data);
 	}
-	
+
 	public function refundPolicy()
 	{
 		$data['Content'] = $this->content_model->GetRefund('refund-policy.html');
@@ -306,8 +303,9 @@ class Content extends CI_Controller
 	{
 		$this->load->view('front/content/seo');
 	}
-	
-	public function newpage(){
+
+	public function newpage()
+	{
 		$this->load->view('front/content/new-common-page');
 	}
 
@@ -498,13 +496,9 @@ class Content extends CI_Controller
 					$message .= '<p>Email: ' . trim($updata['email']) . '</p>';
 					$message .= '<p>Mobile No: ' . trim($updata['contact_number']) . '</p>';
 					$message .= '<p>Message: ' . trim($updata['message']) . '</p>';
-					$result = $this->sendEmail($subject, $message);
+					$this->sendEmail($subject, $message);
 					// Check if the email was sent successfully
-					if ($result == 0) {
-						$this->session->set_flashdata('error', "An error occured.");
-					} else {
-						$this->session->set_flashdata('success', "Contact Us Form is submitted successfully.");
-					}
+					$this->session->set_flashdata('success', "Contact Us Form is submitted successfully.");
 					redirect(BASE_URL . 'contact.html');
 				}
 			}
@@ -539,57 +533,7 @@ class Content extends CI_Controller
 		$data['Content'] = $this->content_model->GetContentByID();
 		$this->load->view('front/content/upcomingevents', $data);
 	}
-
-	public function showroombookingform()
-	{
-		echo $room = $this->input->post('room');
-		$html = 'hello';
-		for ($i = 1; $i <= $room; $i++) {
-			$html .= '<div class="row row' . ($i + 1) . '">
-										<div class="col-lg-3">
-											<p>Room ' . $i . '</p>
-										</div>
-										
-										<div class="col-lg-3">
-											<form>
-												<div class="form-group">
-													<select class="form-control" id="exampleFormControlSelect1">
-													  <option>Adults</option>
-													  <option>1</option>
-													  <option>2</option>
-													  <option>3</option>
-													</select>
-												  </div>
-											</form>
-										</div>
-										<div class="col-lg-3">
-											<form>
-												<div class="form-group">
-													<select class="form-control" id="exampleFormControlSelect1">
-													  <option>Child</option>
-													  <option>0</option>
-													  <option>1</option>
-													</select>
-												  </div>
-											</form>
-										</div>
-										<div class="col-lg-3">
-											<form>
-												<div class="form-group">
-													<select class="form-control" id="exampleFormControlSelect1">
-													  <option>Infants</option>
-													  <option>1</option>
-													  <option>2</option>
-													  <option>3</option>
-													</select>
-												  </div>
-											</form>
-										</div>
-									</div>';
-		}
-		return $html;
-	}
-
+	
 	public function find_html()
 	{
 		// THIS WILL BE UNCOMMENT WHEN UPLOAD ON LIVE SERVER
@@ -624,47 +568,21 @@ class Content extends CI_Controller
 	}
 	public function sendEmail($sub, $msg)
 	{
-		$to = MAIL_TO;
-		$subject = $sub;
-		$apiKey = API_KEY;
-		$url = 'https://api.sendgrid.com/v3/mail/send';
-		$message = $msg;
-		// Prepare the data
-		$data = [
-			'personalizations' => [
-				[
-					'to' => [
-						['email' => "info@ritzmediaworld.com"],
-					],
-					'subject' => $subject,
-				],
-			],
-			'from' => ['email' => 'divya@ctm.co.in'],
-			'content' => [
-				[
-					'type' => 'text/html',
-					'value' => $message,
-				],
-			],
-		];
-		// Set up HTTP options
-		$options = [
-			'http' => [
-				'header' => [
-					"Authorization: Bearer $apiKey",
-					"Content-Type: application/json"
-				],
-				'method' => 'POST',
-				'content' => json_encode($data),
-			],
-		];
-		$context = stream_context_create($options);
-		$result = file_get_contents($url, false, $context);
+		// Load the email library
+		$this->load->library('email');
 
-		if ($result === FALSE) {
-			return 0;
+		// Set email configuration
+		$this->email->from('support@ritzmediaworld.com', 'Ritz media world');   // Sender's email and name
+		$this->email->to('abhishek@ritzmediaworld.com');            // Recipient's email
+		$this->email->subject($sub);        // Email subject
+		$this->email->message($msg);  // Email body
+
+		// Send the email
+		if ($this->email->send()) {
+			log_message('debug', 'Email sent successfully!');
+			echo 'Email sent successfully!';
 		} else {
-			return 1;
+			echo 'Email sending failed: ' . $this->email->print_debugger();
 		}
 	}
 	public function captchaVerification()

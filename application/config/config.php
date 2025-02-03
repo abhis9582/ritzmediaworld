@@ -30,11 +30,11 @@ date_default_timezone_set('Asia/Kolkata');
 
 
 define('CURRENCY','Rs'); 
-$config['base_url'] = 'http://localhost/ritzmediaworld/';
+$config['base_url'] = 'http://localhost/ritzmediaworld.com/';
 
-define("BASE_URL","http://localhost/ritzmediaworld/");
-define("FRONT_DIR","http://localhost/ritzmediaworld/webroot/front/");
-define("ADMIN_DIR","http://localhost/ritzmediaworld/webroot/admin/");
+define("BASE_URL","http://localhost/ritzmediaworld.com/");
+define("FRONT_DIR","http://localhost/ritzmediaworld.com/webroot/front/");
+define("ADMIN_DIR","http://localhost/ritzmediaworld.com/webroot/admin/");
 
 // $config['base_url'] = 'http://localhost/sitemap/';
 
@@ -562,7 +562,5 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-define("API_KEY","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");
 define("SECRET_KEY","6Ldke1gqAAAAAF0fPPmmmpHj7N1mLx_z3pMRCRya");
-define("MAIL_TO","info@ritzmediaworld.com");
 

@@ -1,14 +1,12 @@
 <?php $Systemdata = $this->commonmod_model->GetSystemConfigSetting(1); ?>
-<div class="container-fluid top_header">
+<!-- <div class="container-fluid top_header">
     <div class="row">
         <div class="col-lg-12 d-flex align-items-center justify-content-between top-menu">
-            <!-- Phone Number on the Left -->
             <div class="phone-number">
                 <a href="tel:<?php echo $Systemdata[0]['phone_number'] ?>">
                     <i class="fa fa-phone m-2"></i><?php echo $Systemdata[0]['phone_number'] ?>
                 </a>
             </div>
-            <!-- Social Icons in the Center -->
             <ul class="top_header_ul d-flex justify-content-center align-items-center m-0 p-0">
                 <?php if (!empty($Systemdata[0]['facebook_url'])) { ?>
                     <li><a href="<?= $Systemdata[0]['facebook_url'] ?>" target='_blank'
@@ -46,12 +44,11 @@
                 <li><img height="50px" class="image_google_partner"
                             src="<?= FRONT_DIR ?>images/meta-partner-logo.png" alt="meta partner"></li>
             </ul>
-            <!-- Request Button on the Right -->
-            <div class="request-callback">
-                <button class="top_header_button" id="openFormBtn">REQUEST A CALLBACK</button>
-            </div>
         </div>
     </div>
+</div> -->
+<div class="request-callback">
+    <button class="top_header_button" id="openFormBtn">REQUEST A CALLBACK</button>
 </div>
 <!-- popup form -->
 <div id="contactForm" class="popup-form">
@@ -60,16 +57,13 @@
         <h2>Get In Touch</h2>
         <form id="popup-form" action="<?= BASE_URL . 'popupsubmit' ?>" method="post" onsubmit="submitForm(event)">
             <div class="form-group">
-                <input type="text" id="name" name="name" required placeholder="Your Name"
-                autocomplete="off">
+                <input type="text" id="name" name="name" required placeholder="Your Name" autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="tel" id="mobile" name="mobile" required placeholder="Your Mobile"
-                autocomplete="off">
+                <input type="tel" id="mobile" name="mobile" required placeholder="Your Mobile" autocomplete="off">
             </div>
             <div class="form-group">
-                <input type="email" id="email" name="email" required placeholder="Your Email"
-                autocomplete="off">
+                <input type="email" id="email" name="email" required placeholder="Your Email" autocomplete="off">
             </div>
             <select class="pop-form-select" name="services" id="services" required aria-label="Select a Service">
                 <option selected>Select Service</option>
@@ -83,7 +77,7 @@
             </select>
             <div class="form-group">
                 <textarea id="message" name="message" required placeholder="Any specific requirement"
-                autocomplete="off"></textarea>
+                    autocomplete="off"></textarea>
             </div>
             <button type="submit" class="submit-btn">SUBMIT</button>
         </form>

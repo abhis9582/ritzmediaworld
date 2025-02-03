@@ -86,11 +86,11 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="fb-left">
-					<a href="https://ritzmediaworld.com/privacy-policy.html">Privacy Policy</a> |
-					<a href="https://ritzmediaworld.com/career.html">Career</a> |
-					<a href="https://ritzmediaworld.com/sitemap.xml">Sitemap</a> |
-					<a href="https://ritzmediaworld.com/blogs">Blogs</a> |
-					<a href="https://ritzmediaworld.com/refund-policy.html">Cancellation & Refund Policy</a> |
+					<a href="<?php echo BASE_URL?>privacy-policy.html">Privacy Policy</a> |
+					<a href="<?php echo BASE_URL?>career.html">Career</a> |
+					<a href="<?php echo BASE_URL?>sitemap.xml">Sitemap</a> |
+					<a href="<?php echo BASE_URL?>blogs">Blogs</a> |
+					<a href="<?php echo BASE_URL?>refund-policy.html">Cancellation & Refund Policy</a> |
 					<a href="https://g.co/kgs/gjzcQBq">Ritz Media World Reviews</a>
 				</div>
 			</div>
@@ -122,7 +122,7 @@
 		course of our business through websites, products and services collectively, our “Websites”. It also
 		explains your rights to control our use of these tracking technologies. For additional information
 		about our privacy practices, please review our Privacy Notice.
-		<a class="cookie-text-footer" href="https://ritzmediaworld.com/privacy-policy.html" target="_blank">Read Full Policy</a>.
+		<a class="cookie-text-footer" href="<?php echo BASE_URL?>privacy-policy.html" target="_blank">Read Full Policy</a>.
 	</p>
 	<div class="cookie-div-footer">
 		<button id="popup-accept">I

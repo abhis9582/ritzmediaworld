@@ -342,7 +342,11 @@
 			</div>
 		</div>
 	</section>
-
+	<?php if (!empty($BlogData[0]['description11'])):
+		print_r($BlogData[0]['description11']);
+		?>
+		<?= $BlogData[0]['description11']; ?>
+	<?php endif; ?>
 	<script>
 		function submitForm(event) {
 			event.preventDefault(); // Prevent form from submitting the usual way
