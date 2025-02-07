@@ -72,13 +72,10 @@ html .fc,
 .fc-header .fc-button {
   margin-bottom: 1em;
   vertical-align: top;
+  margin-right: -1px;
 }
   
 /* buttons edges butting together */
-
-.fc-header .fc-button {
-  margin-right: -1px;
-  }
   
 .fc-header .fc-corner-right {
   margin-right: 1px; /* back to normal */

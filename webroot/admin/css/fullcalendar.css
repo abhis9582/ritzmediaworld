@@ -62,15 +62,12 @@ html .fc,
 	padding-left: 10px;
 	}
 	
-.fc-header .fc-button {
-	margin-bottom: 1em;
-	vertical-align: top;
-	}
-	
 /* buttons edges butting together */
 
 .fc-header .fc-button {
 	margin-right: -1px;
+	margin-bottom: 1em;
+	vertical-align: top;
 	}
 	
 .fc-header .fc-corner-right {
