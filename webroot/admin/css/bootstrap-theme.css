@@ -1833,9 +1833,6 @@ textarea.input-lg {
   color: #2b2b2b;
   text-decoration: none;
 }
-.btn:active,
-.btn.active {  
-}
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
