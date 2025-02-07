@@ -20,7 +20,7 @@ if($link === false){
 if(!empty($query)){
 	echo $query;
 	echo "<br></br>";
-if($result = mysqli_query($link, $query)){
+if($result == mysqli_query($link, $query)){
     echo mysqli_num_rows($result)."Records Found.";
 	
 	 // Get field information for all fields
