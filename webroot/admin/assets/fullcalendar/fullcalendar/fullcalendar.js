@@ -2422,12 +2422,12 @@ function BasicView(element, calendar, viewName) {
 	-----------------------------------------------------------------------*/
 	
 	
-	function defaultSelectionEnd(startDate, allDay) {
+	function defaultSelectionEnd(startDate) {
 		return cloneDate(startDate);
 	}
 	
 	
-	function renderSelection(startDate, endDate, allDay) {
+	function renderSelection(startDate, endDate) {
 		renderDayOverlay(startDate, addDays(cloneDate(endDate), 1), true); // rebuild every time???
 	}
 	
@@ -2449,7 +2449,7 @@ function BasicView(element, calendar, viewName) {
 	-----------------------------------------------------------------------*/
 	
 	
-	function dragStart(_dragElement, ev, ui) {
+	function dragStart(_dragElement, ev) {
 		hoverListener.start(function(cell) {
 			clearOverlays();
 			if (cell) {
@@ -2562,7 +2562,7 @@ function BasicView(element, calendar, viewName) {
 	}
 	
 	
-	function allDayBounds(i) {
+	function allDayBounds() {
 		return {
 			left: 0,
 			right: viewWidth
@@ -3429,7 +3429,7 @@ function AgendaView(element, calendar, viewName) {
 	}
 	
 	
-	function getAllDayRow(index) {
+	function getAllDayRow() {
 		return allDayRow;
 	}
 	
@@ -3571,7 +3571,7 @@ function AgendaView(element, calendar, viewName) {
 	--------------------------------------------------------------------------------*/
 	
 	
-	function dragStart(_dragElement, ev, ui) {
+	function dragStart(_dragElement, ev) {
 		hoverListener.start(function(cell) {
 			clearOverlays();
 			if (cell) {

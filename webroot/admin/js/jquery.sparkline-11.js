@@ -1112,7 +1112,7 @@
         /**
          * Return a region id for a given x/y co-ordinate
          */
-        getRegion: function (x, y) {
+        getRegion: function () {
         },
 
         /**
@@ -1159,7 +1159,7 @@
             this.changeHighlight(false);
         },
 
-        changeHighlight: function (highlight)  {},
+        changeHighlight: function ()  {},
 
         /**
          * Fetch the HTML to display as a tooltip
@@ -1328,7 +1328,7 @@
             this.initTarget();
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             var i,
                 regionMap = this.regionMap; // maps regions to value positions
             for (i = regionMap.length; i--;) {
@@ -1804,7 +1804,7 @@
             this.range = range;
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             var result = Math.floor(x / this.totalBarWidth);
             return (result < 0 || result >= this.values.length) ? undefined : result;
         },
@@ -1945,7 +1945,7 @@
             this.initTarget();
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             return Math.floor(x / this.totalBarWidth);
         },
 
@@ -2041,7 +2041,7 @@
             }
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             return Math.floor(x / this.itemWidth);
         },
 
@@ -2608,7 +2608,7 @@
         /**
          * Add a shape to the end of the render queue
          */
-        appendShape: function (shape) {
+        appendShape: function () {
             alert('appendShape not implemented');
         },
 

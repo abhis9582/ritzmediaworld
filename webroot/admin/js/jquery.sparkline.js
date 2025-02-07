@@ -616,7 +616,7 @@
             } else if (document.namespaces && !document.namespaces.v) {
                 // VML is available
                 document.namespaces.add('v', 'urn:schemas-microsoft-com:vml', '#default#VML');
-                $.fn.sparkline.canvas = function(width, height, target, interact) {
+                $.fn.sparkline.canvas = function(width, height, target) {
                     return new VCanvas_vml(width, height, target);
                 };
             } else {
@@ -1199,7 +1199,7 @@
             this.changeHighlight(false);
         },
 
-        changeHighlight: function (highlight)  {},
+        changeHighlight: function ()  {},
 
         /**
          * Fetch the HTML to display as a tooltip
@@ -1368,7 +1368,7 @@
             this.initTarget();
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             var i,
                 regionMap = this.regionMap; // maps regions to value positions
             for (i = regionMap.length; i--;) {
@@ -1846,7 +1846,7 @@
             this.range = range;
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             var result = Math.floor(x / this.totalBarWidth);
             return (result < 0 || result >= this.values.length) ? undefined : result;
         },
@@ -1987,7 +1987,7 @@
             this.initTarget();
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             return Math.floor(x / this.totalBarWidth);
         },
 
@@ -2083,7 +2083,7 @@
             }
         },
 
-        getRegion: function (el, x, y) {
+        getRegion: function (x) {
             return Math.floor(x / this.itemWidth);
         },
 
@@ -2656,28 +2656,28 @@
         /**
          * Add a shape to the end of the render queue
          */
-        appendShape: function (shape) {
+        appendShape: function () {
             alert('appendShape not implemented');
         },
 
         /**
          * Replace one shape with another
          */
-        replaceWithShape: function (shapeid, shape) {
+        replaceWithShape: function () {
             alert('replaceWithShape not implemented');
         },
 
         /**
          * Insert one shape after another in the render queue
          */
-        insertAfterShape: function (shapeid, shape) {
+        insertAfterShape: function () {
             alert('insertAfterShape not implemented');
         },
 
         /**
          * Remove a shape from the queue
          */
-        removeShapeId: function (shapeid) {
+        removeShapeId: function () {
             alert('removeShapeId not implemented');
         },
 
