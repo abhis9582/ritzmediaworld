@@ -32,7 +32,7 @@ class Morris.Hover
           top = parentHeight / 2 - hoverHeight / 2
     else
       top = parentHeight / 2 - hoverHeight / 2
-    @el.css(left: left + "px", top: parseInt(top) + "px")
+    @el.css(left: left + "px", top: parseInt(top, 10) + "px")
 
   show: ->
     @el.show()
