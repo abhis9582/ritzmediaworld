@@ -1996,11 +1996,6 @@ abstract class CI_DB_query_builder extends CI_DB_driver {
 	{
 		$key = $this->_object_to_array_batch($key);
 
-		if ( ! is_array($key))
-		{
-			// @todo error
-		}
-
 		is_bool($escape) OR $escape = $this->_protect_identifiers;
 
 		foreach ($key as $k => $v)

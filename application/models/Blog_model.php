@@ -200,8 +200,7 @@ class Blog_Model extends CI_Model
 		$result = $this->db->get()->result_array();
 		$arr = json_decode($result[0]['ip_address']);
 		$ser = in_array($ip, $arr);
-		if ($ser) {
-		} else {
+		if (!$ser) {
 			array_push($arr, $ip);
 		}
 		$arr = json_encode($arr);
