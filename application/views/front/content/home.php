@@ -169,65 +169,70 @@
             <div class="row ml-2 mr-2">
                 <?php foreach ($Service as $s_data) {
                     ?>
-                    <a href="<?= BASE_URL. $s_data['slug_url']?>" class="sd_boxx col-6 col-md-3 col-lg-3 p-2 mb-4 mt-4">
+                    <a href="<?= BASE_URL . $s_data['slug_url'] ?>" class="sd_boxx col-6 col-md-3 col-lg-3 p-2 mb-4 mt-4">
                         <img src="<?php echo BASE_URL . 'webroot/images/services/' . $s_data['service_image']; ?>"
-                            alt="Top branding agency in Delhi – Ritz Media World" loading="lazy" width="100px" height="100px"/>
+                            alt="Top branding agency in Delhi – Ritz Media World" loading="lazy" width="100px"
+                            height="100px" />
                         <h2><?php echo $s_data['service_title']; ?></h2>
                         <?php echo $s_data['description']; ?>
                     </a>
                 <?php } ?>
             </div>
-        </d>
-    </div>
+            </d>
+        </div>
 
-    <section class="service_boxxx second_div">
-        <h2><?= $why_choose[0]['our_vision_head']; ?></h2>
-        <div class="container">
-            <div class="row row2">
-                <div class="col-lg-12">
-                    <p><?php echo $why_choose[0]['our_vision_desc']; ?></p>
+        <section class="service_boxxx second_div">
+            <h2><?= $why_choose[0]['our_vision_head']; ?></h2>
+            <div class="container">
+                <div class="row row2">
+                    <div class="col-lg-12">
+                        <p><?php echo $why_choose[0]['our_vision_desc']; ?></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="service_boxxx second_div">
-        <div class="container">
-            <h2><?= $why_choose[0]['how_we_work_head']; ?></h2>
-            <p>
-                As the most reputed and trusted <a href="https://ritzmediaworld.com/contact.html">Digital Marketing
-                    Services Delhi NCR</a>, we continue to strive towards
-                maintaining excellence, following an approach that allows us to be the best choice among our
-                clients.
-            </p>
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <div class="row d-flex justify-content-center">
-                        <div class="how-we-work-div mx-4 my-3">
-                            <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-customer-oriented-icon.png"
-                                alt="image1" loading="lazy" />
-                            <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[1]; ?></p>
-                        </div>
-                        <div class="how-we-work-div mx-4 my-3">
-                            <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-High-End-icon.png"
-                                alt="image2" loading="lazy" />
-                            <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[2]; ?></p>
-                        </div>
-                        <div class="how-we-work-div mx-4 my-3">
-                            <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-skilled-creativeteam-icon.png"
-                                alt="image3" loading="lazy" />
-                            <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[3]; ?></p>
-                        </div>
-                        <div class="how-we-work-div mx-4 my-3">
-                            <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-Competetive-icon.png"
-                                alt="image4" loading="lazy" />
-                            <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[4]; ?></p>
+        <section class="service_boxxx second_div">
+            <div class="container">
+                <h2><?= $why_choose[0]['how_we_work_head']; ?></h2>
+                <p>
+                    As the most reputed and trusted <a href="https://ritzmediaworld.com/contact.html">Digital Marketing
+                        Services Delhi NCR</a>, we continue to strive towards
+                    maintaining excellence, following an approach that allows us to be the best choice among our
+                    clients.
+                </p>
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="row d-flex justify-content-center">
+                            <div class="how-we-work-div mx-4 my-3">
+                                <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-customer-oriented-icon.png"
+                                    alt="image1" loading="lazy" />
+                                <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[1]; ?>
+                                </p>
+                            </div>
+                            <div class="how-we-work-div mx-4 my-3">
+                                <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-High-End-icon.png"
+                                    alt="image2" loading="lazy" />
+                                <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[2]; ?>
+                                </p>
+                            </div>
+                            <div class="how-we-work-div mx-4 my-3">
+                                <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-skilled-creativeteam-icon.png"
+                                    alt="image3" loading="lazy" />
+                                <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[3]; ?>
+                                </p>
+                            </div>
+                            <div class="how-we-work-div mx-4 my-3">
+                                <img src="<?php echo BASE_URL ?>webroot/front/images/mk-difrnt-Competetive-icon.png"
+                                    alt="image4" loading="lazy" />
+                                <p class="text-light"><?php echo explode("-", $why_choose[0]['how_we_work_desc'])[4]; ?>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
+    </div>
     </section>
     <section class="service_boxxx new-section-word">
         <div class="row">
@@ -544,6 +549,28 @@
             }
         });
     </script>
+    <script type="text/javascript">
+        _linkedin_partner_id = "6845218";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id); 
+    </script>
+    <script type="text/javascript">
+        (function (l) {
+            if (!l) {
+                window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+                window.lintrk.q = []
+            }
+            var s = document.getElementsByTagName("script")[0];
+            var b = document.createElement("script");
+            b.type = "text/javascript"; b.async = true;
+            b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+            s.parentNode.insertBefore(b, s);
+        })(window.lintrk); 
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none;" alt=""
+            src="https://px.ads.linkedin.com/collect/?pid=6845218&fmt=gif" />
+    </noscript>
     <script src="<?= FRONT_DIR ?>js/bootstrap.min.js"></script>
     <script src="<?= FRONT_DIR ?>js/popper.min.js"></script>
     <script src="<?= FRONT_DIR ?>js/owl.carousel.min.js"></script>
