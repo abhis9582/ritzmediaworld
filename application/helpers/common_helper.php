@@ -29,34 +29,41 @@ function header_menu()
 					<li class="nav-item">
 						<a class="nav-link" href="<?= BASE_URL ?>">Home <span class="sr-only">(current)</span></a>
 					</li>
-					<li id="services_dropdown"
-						class="nav-item dropdown">
+					<li id="services_dropdown" class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle industry-link" href="#" id="navbarDropdown3" title="Industry"
 							role="button" aria-label="Submit" data-toggle="dropdown" aria-haspopup="true"
 							aria-expanded="false">Services</a>
 						<ul class="dropdown-menu industry-dropdown" aria-labelledby="navbarDropdown3">
 							<li class="nav-item dropdown">
-								<a class="dropdown-item nav-link dropdown-toggle" href="#" id="featuresDropdown"
-									role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Creative Services">
-									Creative Services
-								</a>
+								<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown9"
+									title="Digital	Marketing" role="button" aria-label="Submit">Digital
+									Marketing</a>
 								<ul class="dropdown-menu" aria-labelledby="featuresDropdown">
 									<li><a class="dropdown-item"
-											href="<?= BASE_URL ?>branding-and-identity-development.html">Branding and
-											Identity Development</a></li>
+											href="<?= BASE_URL ?>digital-marketing-services.html">Digital Marketing
+											Services
+										</a></li>
 									<li class="dropdown">
-										<a class="dropdown-item" href="<?= BASE_URL ?>graphic-designing.html">
-											Graphic Designing
+										<a class="dropdown-item"
+											href="<?= BASE_URL ?>search-engine-optimization---seo.html">
+											Search Engine Optimization - SEO
+
 										</a>
 									</li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>logo-design.html">Logo Design</a></li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>print-advertisement-design.html">Print
-											Advertisement Design
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>ppc-google-ads-agency.html">PPC
+											(Google Ads)</a>
+									</li>
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>social-media-management.html">Social
+											Media
+											Management
 										</a></li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>ui-ux-design.html">UI/UX Design
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>orm-in-digital-marketing.html">ORM in
+											Digital
+											Marketing
 										</a></li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>packaging-design.html">Packaging
-											Design
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>lead-generation.html">Lead Generation
+										</a></li>
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>brand-awareness.html">Brand Awareness
 										</a></li>
 								</ul>
 							</li>
@@ -120,6 +127,31 @@ function header_menu()
 								</ul>
 							</li>
 							<li class="nav-item dropdown">
+								<a class="dropdown-item nav-link dropdown-toggle" href="#" id="featuresDropdown"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false" title="Creative Services">
+									Creative Services
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="featuresDropdown">
+									<li><a class="dropdown-item"
+											href="<?= BASE_URL ?>branding-and-identity-development.html">Branding and
+											Identity Development</a></li>
+									<li class="dropdown">
+										<a class="dropdown-item" href="<?= BASE_URL ?>graphic-designing.html">
+											Graphic Designing
+										</a>
+									</li>
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>logo-design.html">Logo Design</a></li>
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>print-advertisement-design.html">Print
+											Advertisement Design
+										</a></li>
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>ui-ux-design.html">UI/UX Design
+										</a></li>
+									<li><a class="dropdown-item" href="<?= BASE_URL ?>packaging-design.html">Packaging
+											Design
+										</a></li>
+								</ul>
+							</li>
+							<li class="nav-item dropdown">
 								<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown8"
 									title="Celebrity Endorsements" role="button" aria-label="Submit">Celebrity
 									Endorsements</a>
@@ -143,39 +175,6 @@ function header_menu()
 										</a></li>
 									<li><a class="dropdown-item" href="<?= BASE_URL ?>legal-compliance.html">Legal
 											Compliance
-										</a></li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown9"
-									title="Digital	Marketing" role="button" aria-label="Submit">Digital
-									Marketing</a>
-								<ul class="dropdown-menu" aria-labelledby="featuresDropdown">
-									<li><a class="dropdown-item"
-											href="<?= BASE_URL ?>digital-marketing-services.html">Digital Marketing
-											Services
-										</a></li>
-									<li class="dropdown">
-										<a class="dropdown-item"
-											href="<?= BASE_URL ?>search-engine-optimization---seo.html">
-											Search Engine Optimization - SEO
-
-										</a>
-									</li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>ppc-google-ads-agency.html">PPC
-											(Google Ads)</a>
-									</li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>social-media-management.html">Social
-											Media
-											Management
-										</a></li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>orm-in-digital-marketing.html">ORM in
-											Digital
-											Marketing
-										</a></li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>lead-generation.html">Lead Generation
-										</a></li>
-									<li><a class="dropdown-item" href="<?= BASE_URL ?>brand-awareness.html">Brand Awareness
 										</a></li>
 								</ul>
 							</li>
@@ -224,8 +223,7 @@ function header_menu()
 							</li>
 						</ul>
 					</li>
-					<li
-						class="nav-item dropdown">
+					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="<?= BASE_URL ?>about.html" id="navbarDropdown"
 							title="About Us" role="button" aria-label="Submit" data-toggle="dropdown" area-haspopup="true"
 							aria-expanded="false">About Us</a>

@@ -48,13 +48,13 @@
     </div>
 </div> -->
 <div class="request-callback">
-    <button class="top_header_button" id="openFormBtn">REQUEST A CALLBACK</button>
+    <button class="top_header_button" id="openFormBtn">GROW YOUR BUSINESS</button>
 </div>
 <!-- popup form -->
 <div id="contactForm" class="popup-form">
     <div class="form-container">
         <span id="closeFormBtn" class="close-btn">&times;</span>
-        <h2>Get In Touch</h2>
+        <h2 class="my-3">We’ll Connect with You Shortly!</h2>
         <form id="popup-form" action="<?= BASE_URL . 'popupsubmit' ?>" method="post" onsubmit="submitForm(event)">
             <div class="form-group">
                 <input type="text" id="name" name="name" required placeholder="Your Name" autocomplete="off">
@@ -67,16 +67,22 @@
             </div>
             <select class="pop-form-select" name="services" id="services" required aria-label="Select a Service">
                 <option selected>Select Service</option>
-                <option value="print_advertising">Print Advertising</option>
-                <option value="creative_services">Creative Services</option>
-                <option value="radio_advertising">Radio Advertising</option>
-                <option value="celebrity_endorsements">Celebrity Endorsements</option>
                 <option value="digital_marketing">Digital Marketing</option>
+                <option value="print_advertising">Print Advertising</option>
+                <option value="radio_advertising">Radio Advertising</option>
+                <option value="creative_services">Creative Services</option>
                 <option value="content_marketing">Content Marketing</option>
                 <option value="web_designing_development">Web Designing & Development</option>
+                <option value="celebrity_endorsements">Celebrity Endorsements</option>
+            </select>
+            <select class="pop-form-select" name="budget" id="budget" required aria-label="Select your budget">
+                <option selected>Select budget</option>
+                <option value="50K to 1 Lakh">50K to 1 Lakh</option>
+                <option value="1 Lakh to 5 Lakh">1 Lakh to 5 Lakh</option>
+                <option value="Above 5 Lakh">Above 5 Lakh</option>
             </select>
             <div class="form-group">
-                <textarea id="message" name="message" required placeholder="Any specific requirement"
+                <textarea id="message" name="message" placeholder="If any specific requirement"
                     autocomplete="off"></textarea>
             </div>
             <button type="submit" class="submit-btn">SUBMIT</button>
@@ -197,6 +203,8 @@ if ($current_url != BASE_URL && $method != 'hotel_detail') {
         })
             .then(response => response.json())
             .then(data => {
+                document.getElementById('contactForm').style.display = "none";
+                alert('Form submitted successfully!');
                 form.reset();
             })
             .catch(error => {

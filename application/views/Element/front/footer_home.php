@@ -4,10 +4,8 @@
 	<div class="row p-5 d-flex justify-content-center footer-new">
 		<div class="col-md-3">
 			<img src="<?php echo BASE_URL ?>webroot/front/images/nn_logo.jpg" alt="footer logo">
-			<p class="footer-desc">We’ve been in the business for the better part of the last 16 years. So it’s safe
-				to say that we’re the most experienced advertising agency in the northern belt of this great nation
-				of India. This means that we have been in the trenches with the biggest brands from all business
-				disciplines.</p>
+			<p class="footer-desc">
+			Accelerate your journey to success with result-oriented solutions for Digital Advertising, Social Media Management, SEO, and Compelling Content backed by more than 17 years of advertising wisdom with a wide array of clients across all industries across the Indian subcontinent.</p>
 			<div class="row mx-2">
 				<ul class="d-flex justify-content-center">
 					<?php if (!empty($Systemdata[0]['facebook_url'])) { ?>
@@ -44,19 +42,19 @@
 			</div>
 		</div>
 		<div class="col-md-3">
-			<h3 class="my-5">What we do</h3>
-			<p><a class="text-light" href="<?= BASE_URL ?>print-advertising.html">Print Advertising</a></p>
-			<p><a class="text-light" href="<?= BASE_URL ?>creative-services.html">Creative Services</a></p>
-			<p><a class="text-light" href="<?= BASE_URL ?>radio-advertising.html">Radio Advertising</a></p>
-			<p><a class="text-light" href="<?= BASE_URL ?>celebrity-endorsements.html">Celebrity Endorsements</a>
-			</p>
+			<h3 class="mt-5 mb-4">What we do</h3>
 			<p><a class="text-light" href="<?= BASE_URL ?>digital-marketing.html">Digital Marketing</a></p>
+			<p><a class="text-light" href="<?= BASE_URL ?>print-advertising.html">Print Advertising</a></p>
+			<p><a class="text-light" href="<?= BASE_URL ?>radio-advertising.html">Radio Advertising</a></p>
+			<p><a class="text-light" href="<?= BASE_URL ?>creative-services.html">Creative Services</a></p>
 			<p><a class="text-light" href="<?= BASE_URL ?>contents-marketing.html">Content Marketing</a></p>
 			<p><a class="text-light" href="<?= BASE_URL ?>web-designing-and-development.html">Web Designing &
 					Development</a></p>
+			<p><a class="text-light" href="<?= BASE_URL ?>celebrity-endorsements.html">Celebrity Endorsements</a>
+			</p>
 		</div>
 		<div class="col-md-3">
-			<h3 class="my-5">Quick Links</h3>
+			<h3 class="mt-5 mb-4">Quick Links</h3>
 			<p><a class="text-light" href="<?= BASE_URL ?>about.html">About Us</a></p>
 			<p><a class="text-light" href="<?= BASE_URL ?>contact.html">Contact Us</a></p>
 			<p><a class="text-light" href="<?= BASE_URL ?>blogs">Blogs</a></p>
@@ -65,17 +63,19 @@
 			<!-- <p><a class="text-light" href="<?= BASE_URL ?>resource.html">Resource</a></p> -->
 		</div>
 		<div class="col-md-3">
-			<h3 class="my-5">Our Offices</h3>
+			<h3 class="mt-5 mb-4">Our Offices</h3>
 			<span>Address: 402 – 404 , 4th floor Corporate Park, <br>Tower A1 Sector 142 , Greater Noida</span><br>
 			<span><i class="fa fa-phone mr-2 mt-2"></i><a href="tel:09220516777" class="text-light">09220516777</a>,
 				<a class="text-light" href="tel:07290002168">07290002168</a></span><br>
 			<span class="d-flex">Email: &nbsp; <span id="email_id"></span></span>
 			<div class="row mt-3 d-flex justify-content-center">
 				<div class="div mx-2">
-					<img src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner" height="55px" loading="lazy">
+					<img src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner" height="55px"
+						loading="lazy">
 				</div>
 				<div class="div mx-2">
-					<img width="100px" src="<?= FRONT_DIR ?>images/meta-partner-logo.png" alt="meta partner" loading="lazy">
+					<img width="100px" src="<?= FRONT_DIR ?>images/meta-partner-logo.png" alt="meta partner"
+						loading="lazy">
 				</div>
 			</div>
 		</div>
@@ -86,11 +86,11 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="fb-left">
-					<a href="<?php echo BASE_URL?>privacy-policy.html">Privacy Policy</a> |
-					<a href="<?php echo BASE_URL?>career.html">Career</a> |
-					<a href="<?php echo BASE_URL?>sitemap.xml">Sitemap</a> |
-					<a href="<?php echo BASE_URL?>blogs">Blogs</a> |
-					<a href="<?php echo BASE_URL?>refund-policy.html">Cancellation & Refund Policy</a> |
+					<a href="<?php echo BASE_URL ?>privacy-policy.html">Privacy Policy</a> |
+					<a href="<?php echo BASE_URL ?>career.html">Career</a> |
+					<a href="<?php echo BASE_URL ?>sitemap.xml">Sitemap</a> |
+					<a href="<?php echo BASE_URL ?>blogs">Blogs</a> |
+					<a href="<?php echo BASE_URL ?>refund-policy.html">Cancellation & Refund Policy</a> |
 					<a href="https://g.co/kgs/gjzcQBq">Ritz Media World Reviews</a>
 				</div>
 			</div>
@@ -122,7 +122,8 @@
 		course of our business through websites, products and services collectively, our “Websites”. It also
 		explains your rights to control our use of these tracking technologies. For additional information
 		about our privacy practices, please review our Privacy Notice.
-		<a class="cookie-text-footer" href="<?php echo BASE_URL?>privacy-policy.html" target="_blank">Read Full Policy</a>.
+		<a class="cookie-text-footer" href="<?php echo BASE_URL ?>privacy-policy.html" target="_blank">Read Full
+			Policy</a>.
 	</p>
 	<div class="cookie-div-footer">
 		<button id="popup-accept">I
