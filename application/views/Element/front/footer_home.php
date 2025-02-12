@@ -72,10 +72,10 @@
 			<span class="d-flex">Email: &nbsp; <span id="email_id"></span></span>
 			<div class="row mt-3 d-flex justify-content-center">
 				<div class="div mx-2">
-					<img src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner" height="55px">
+					<img src="<?= FRONT_DIR ?>images/googlepartner.webp" alt="google partner" height="55px" loading="lazy">
 				</div>
 				<div class="div mx-2">
-					<img width="100px" src="<?= FRONT_DIR ?>images/meta-partner-logo.png" alt="meta partner">
+					<img width="100px" src="<?= FRONT_DIR ?>images/meta-partner-logo.png" alt="meta partner" loading="lazy">
 				</div>
 			</div>
 		</div>
