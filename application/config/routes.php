@@ -51,8 +51,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'content/index';
-
-$route['blog/([a-zA-Z0-9-_]+)'] = 'blogs/blog_single/$1';
+$route['blogs'] = 'blogs/index';
+$route['([a-zA-Z0-9-_]+)'] = 'blogs/blog_single/$1';
 $route['category/([a-zA-Z0-9-_]+)'] = 'blogs/category/$1';
 $route['tags/([a-zA-Z0-9-_]+)'] = 'blogs/tagsRelatedBlogs/$1';
 $route['landing-page.html'] = 'content/landingPage';

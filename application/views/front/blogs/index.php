@@ -65,7 +65,7 @@
 														$src = ($imagename) ? $imgpath . '/' . $imagename : "webroot/images/rap_temp.jpg";
 													}
 													?>
-													<a href="<?= BASE_URL ?>blog/<?= $url_title; ?>">
+													<a href="<?= BASE_URL ?><?= $url_title; ?>">
 														<img src="<?= BASE_URL . $src ?>" class="media-object" alt="image"
 															style="max-width:100%;max-height:100%;">
 													</a>
@@ -74,14 +74,14 @@
 															<div class="date-tag"><span><?= $day ?> </span><?= $month ?>
 															</div>
 															<h4 class="media-heading headingfont"><a
-																	href="<?= BASE_URL ?>blog/<?= $url_title; ?>"><?= $BlogData['title'] ?></a>
+																	href="<?= BASE_URL ?><?= $url_title; ?>"><?= $BlogData['title'] ?></a>
 															</h4>
 														</header>
 														<div class="clearfix"></div>
 														<p>
 															<?= substr(strip_tags($BlogData['description']), 0, 200) ?>
 															<a class="blog_read"
-																href="<?= BASE_URL ?>blog/<?= $url_title; ?>">[Read
+																href="<?= BASE_URL ?><?= $url_title; ?>">[Read
 																More]</a>
 														</p>
 													</div>

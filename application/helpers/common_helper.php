@@ -224,10 +224,9 @@ function header_menu()
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="<?= BASE_URL ?>about.html" id="navbarDropdown"
-							title="About Us" role="button" aria-label="Submit" data-toggle="dropdown" area-haspopup="true"
-							aria-expanded="false">About Us</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown10">
+						<a class="nav-link" href="<?= BASE_URL ?>about.html"
+							title="About Us" role="button" aria-label="Submit">About Us</a>
+						<!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown10">
 							<li class="nav-item dropdown">
 								<a class="dropdown-item" href="<?= BASE_URL ?>about.html" id="navbarDropdown1">
 									Our Profile
@@ -239,7 +238,7 @@ function header_menu()
 									Management
 								</a>
 							</li>
-						</ul>
+						</ul> -->
 					</li>
 
 					<li class="nav-item">

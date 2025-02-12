@@ -30,11 +30,11 @@ date_default_timezone_set('Asia/Kolkata');
 
 
 define('CURRENCY','Rs'); 
-$config['base_url'] = 'http://localhost/ritzmediaworld.com/';
+$config['base_url'] = 'http://localhost/ritzmediaworld/';
 
-define("BASE_URL","http://localhost/ritzmediaworld.com/");
-define("FRONT_DIR","http://localhost/ritzmediaworld.com/webroot/front/");
-define("ADMIN_DIR","http://localhost/ritzmediaworld.com/webroot/admin/");
+define("BASE_URL","http://localhost/ritzmediaworld/");
+define("FRONT_DIR","http://localhost/ritzmediaworld/webroot/front/");
+define("ADMIN_DIR","http://localhost/ritzmediaworld/webroot/admin/");
 
 // $config['base_url'] = 'http://localhost/sitemap/';
 
